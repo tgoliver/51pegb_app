@@ -1,0 +1,25 @@
+.DS_Store
+
+# tex related auxillary files
+*.aux
+*.log
+*.spl
+*.dvi
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.pdf
+
+# bib files we don't want
+*.bbl
+*.blg
+*.swp
+
+# Files for data
+copy.sh
+DATA/
+DATA.tar.gz
+SEDI_2024/
+*.tar*
+#NAT_sub/
+#pdf images
