@@ -3,12 +3,44 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{multicol}
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{subfig}
-\usepackage{natbib,url}
+%\usepackage{natbib,url}
+\usepackage[backend=biber,style=numeric,maxnames =2,giveninits = true]{biblatex}
+\addbibresource{journal_abbreviations.bib}
+\addbibresource{References.bib}
 \usepackage[margin = 1in]{geometry}
-\bibliographystyle{abbrv}
+%\bibliographystyle{abbrv}
+\DeclareBibliographyDriver{std}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author/editor+others/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  %\usebibmacro{title}%
+    %\newunit\newblock
+  \usebibmacro{journal}
+  \newunit\newblock
+  \usebibmacro{date}%
+  \newunit\newblock
+\usebibmacro{finentry}}
+
+\DeclareBibliographyDriver{stdbook}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author/editor+others/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  %\usebibmacro{title}%
+  \usebibmacro{title}
+  \newunit\newblock
+  \usebibmacro{date}%
+  \newunit\newblock
+\usebibmacro{finentry}}
+
+\DeclareBibliographyAlias{article}{std}
+\DeclareBibliographyAlias{book}{stdbook}
+\AtBeginBibliography{\small}
 
 \def\epo{\epsilon\rightarrow 0}
 \def\lb{\left(}
@@ -22,11 +54,12 @@
 \date{}
 
 \begin{document}
+\newcommand{\citep}[1]{\cite{#1}}
 \maketitle
 \section{Summary}
 \section{Intellectual Merit}
 The solar system contains a number of icy bodies, many of which are thought to be ``ocean worlds,'' that may be suitable candidates for the habitability of life.
-The primary objective of NASA's \textit{Europa Clipper} (EC) (eg.\citep{pC14_JUICE}) and ESA's \textit{Jupiter Icy Moons Explorer} (JUICE)\citep{oG13} missions is to investigate Europa, Ganymede, and Callisto, three Jovian satellites believed to be ocean worlds. Each is expected contain salty, liquid oceans underneath thin icy shells \citep{rP99,fN16}, and both EC and JUICE aim to determine whether these bodies contain necessary conditions for life\citep{tB24}.
+The primary objective of NASA's \textit{Europa Clipper} (EC) (\cite{pC14_JUICE}) and ESA's \textit{Jupiter Icy Moons Explorer} (JUICE)\citep{oG13} missions is to investigate Europa, Ganymede, and Callisto, three Jovian satellites believed to be ocean worlds. Each is expected contain salty, liquid oceans underneath thin icy shells \citep{rP99,fN16}, and both EC and JUICE aim to determine whether these bodies contain necessary conditions for life\citep{tB24}.
 The sub-surface oceans link the solid cores of these moons to their icy exteriors, and are therefore expected to play an important role in the transport of heat and chemicals to their surfaces \citep{kS20}. 
 
 The dynamics of these oceans are poorly understood, and neither EC nor JUICE will be able to make direct observations of the oceans. 
@@ -71,7 +104,7 @@ To take Europa as an example, predicted values of $Ra$ and  $Ek$ are $O\lb 10^{2
 
 To further complicate matters, it is insufficient to establish scaling relations for each non-dimensional parameter independently, because the flow behaviours can vary wildly depending on the particular combination of the non-dimensional parameters. 
 For example, at a value of $Ra = 10^{8}$ a non-rotating flow ($Ek\rightarrow \infty$) is expected to vigourously convect, however rapid rotation (low  $Ek$) will stifle and change the structure of the convection, or even arrest it entirely. 
-Figure \ref{f:reg_d} displays a cross-section of $Ek,Ra$ parameter space, and the associated regimes. The ordinate has been rescaled by $Ek^{4/3}$ because for rotating flows the parameter $RaEk^{4/3}$ determines the boundary between conduction and convection \citep[e.g. ][]{sC61}.
+Figure \ref{f:reg_d} displays a cross-section of $Ek,Ra$ parameter space, and the associated regimes. The ordinate has been rescaled by $Ek^{4/3}$ because for rotating flows the parameter $RaEk^{4/3}$ determines the boundary between conduction and convection \citep{sC61}.
 
 For $RaEk^{4/3}<O\lb 1\rb,$  rotational effects dominate the system and supress radial motion. This regime is referred to as conductive, since all heat is transported conductively. As $Ra$ is increased, convection sets in as axially stretched flows conforming to the Taylor-Proudman theorem \citep{gB53}, which dictates that rapidly-rotating flows remain invariant along the axis of rotation. Such dynamics are known as geostrophic.
 Geostrophic flows are laminar over a small range of $Ra,$ but quickly become turbulent. Geostrophy holds over large time and length scales, but on small scales low order fluctuations make the dynamics highly non-linear.
@@ -82,31 +115,39 @@ Although significant uncertainty exists, it is believed that for the Jovian ocea
 Most studies \citep{kS19, dL23} have investigated only the ocean domain, and have prescribed boundary conditions at the ocean-ice interface to represent the fixed melting temperature of the ice. 
 A model with a dynamic, melting icy boundary has been studied, however the authors were primarily interested in the resulting topography. The fast timescale heat fluctuations in the icy shell due to the underlying convection were not investigated \citep{jK24}. 
 
-CHT is a simulation configuration in which a solid boundary is included in the solution domain so that heat is able to conduct from the fluid into the boundary. Rather than placing a boundary condition on the fluid surface, the condition is placed on the outermost solid surface and the interface is solved \citep{dA09}. The significance of this effect can be estimated by the value of the Biot number $Bi$ \citep{dA09,jL24}, a non-dimensional parameter respresenting the ratio of conductive resistance to convective heat flow. For the conjugate problem, $Bi$ can be estimated as
-\[Bi \sim Nu\frac{k_{f}}{k_{i}}\frac{D_{i}}{D_{f}},\]
-where $k_{f\lb i\rb }$ is the thermal conductivity of the fluid (ice) and $D_{f\lb i\rb }$ is the fluid (ice) depth.
+CHT is a simulation configuration in which a solid boundary is included in the solution domain so that heat is able to conduct from the fluid into the boundary. Rather than placing a boundary condition on the fluid surface, the condition is placed on the outermost solid surface and the interface is solved \citep{dA09}. The significance of this effect can be estimated by the value of the Biot number $Bi$ \citep{dA09,jL24}, a non-dimensional parameter representing the ratio of conductive resistance to convective heat flow. For the conjugate problem, $Bi$ can be estimated as
+\[Bi \sim Nu\frac{k_{f}}{k_{i}}\frac{D_{i}}{D},\]
+where $k_{f\lb i\rb }$ is the thermal conductivity of the fluid (ice) and $D_{i}$ is the ice depth.
 Estimates for Europa therefore suggest $Bi \sim O\lb 10^{6}\rb$ \citep{dL23}. When $Bi>1,$ the conjugate problem is considered relevant, and therefore this process likely plays a role in the evolution of icy shells.
 \subsection{Compositional convection}
 On Earth, solutal composition is known to play a dominant role in oceanic convection \textcolor{red}{indicate you know what you're talking about....} The electrical conductive properties of the Jovian satellites likely imply salty oceans\citep{cZ00}, which suggests a variety of consequences. At pressures relevant to the icy moons, salinity can reverse the sign of the thermal expansivity coefficient $\alpha$ at temperatures close to, but greater than, the melting temperature. This means that colder fluid is less dense, which may allow for the generation of a buoyantly stable layer that inhibits heat and mass transport \citep{aT64}. 
-Furthermore, salinity affects fluid density even in the absence of temperature variations. This mechanism provides a second source of buoyancy and can yield double diffusive convection.
+Furthermore, salinity affects fluid density even in the absence of temperature variations. This mechanism provides a second source of buoyancy and can yield double diffusive convection (DDC). The molecular diffusivities of salt and temperature are different; a consequence is that even stably stratified fluids are convectively unstable under certain circumstances \citep{tR13}. The ratio $\kappa_T/ \kappa_S=Le$ is the Lewis number, and, based on terrestial values, is $O(10^2)$.
+From a forward model perspective, the DDC problem has primarily been studied in cartesian plane layers \citep{gM12,}, however two studies have investigated spherical shells \textcolor{red}{Monville 19,and Mather 21, can also mention Ashkenazy}.
 \section{Proposed project and methodology}
-I propose to sets of simulations in order to study ice-ocean coupling in the icy moons.
+I propose two sets of simulations in order to study ice-ocean coupling in the icy moons. The first study will involve the conjugate heat transfer (CHT) model and will be performed within the state of the art parameter regimes previously reported by references\citep{dL23,kS19} (which do not involve the CHT framework).
+The second study will focus on double diffusion (DD) of temperature and salinity. The proposed simulations are listed in table \ref{t:param}.
 \subsection{Conjugate heat transfer}
 \begin{table}
 \begin{center}
-\begin{tabular}{|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline
-$Ra$&$Ek$&$D_{f}/D_{i}$\\
+Model&Geometry&$Ra$&$Ek$&$D/D_{i}$ or $Ra_s$\\
 \hline
-$\lb 5 \times 10^{6} - 2 \times 10^{8} \rb $ & $3 \times 10^{-4} $ & $2,10$\\
+CHT& Shell&$\lb 5 \times 10^{6} - 2 \times 10^{8} \rb $ & $3 \times 10^{-4} $ & $2,10$\\
 \hline
-$\lb 5 \times 10^{6} - 1 \times 10^{9} \rb $ & $1 \times 10^{-5} $ & $2,10$\\
+CHT& Shell&$\lb 5 \times 10^{6} - 1 \times 10^{9} \rb $ & $1 \times 10^{-5} $ & $2,10$\\
 \hline
-$\lb 5 \times 10^{7} - 2 \times 10^{9} \rb $ & $3 \times 10^{-5} $ & $2,10$\\
+CHT& Shell&$\lb 5 \times 10^{7} - 2 \times 10^{9} \rb $ & $3 \times 10^{-5} $ & $2,10$\\
+\hline
+DD& Shell & $10^5$& $\infty$&$10^4-10^5$\\
+\hline
+DD& Shell & $10^5$& $10^{-4}$&$10^4-10^5$\\
+\hline
+DD& Plane & $5\times10^8$& $10^{-6}$&$10^8-5\times10^9$\\
 \hline
 \end{tabular}
 \end{center}
-\caption{Proposed parameter space}
+\caption{Proposed parameter space. The rightmost column presents the ratio of ocean to ice thicknesses for the CHT model and the compositional Rayleigh number for the DDC model. \textcolor{red}{Fix your ekman values, should be $10^{-4}$ not $3\times10^{-4}$}}
 \label{t:param}
 \end{table}
 I will explore Boussinesq convection in a thin, liquid shell surrounded by a thermally conducting layer. 
@@ -115,11 +156,15 @@ At larger values of $Ek,$ I will simulate the transitional and non-rotating regi
 The hydrodynamic code \texttt{Nek5000}\citep{nek5000} is capable of solving the CHT problem and I have already used the code extensively to solve related geophysical problems. 
 Based on the numerical resolutions reported in \citep{dL23}, I estimate that $3\times 10^{6}$ CPU-hours will be necessary to complete these simulations.
 
-Primarily, I will report temperature distributions within the icy shell. I will also investigate global transport quantites, such as convected heat, and structural quantities, such as latitudinal profiles of temperature. 
-These latter results can be compared to existing studies \citep[e.g.][]{dL23,kS19,jK22} to determine whether the CHT setup has significant effects on the convection itself.
-\subsection{Solutal convection}
-I will also investigate double-diffusive convection in a non-rotating and slowly rotating (moderate $Ek$) context. Due to the significant computational constraints, I propose to study a shperical shell geometry for only non-rotating and slowly rotating ($Ek = 10^{-4}$) flows. I will suplement these results with a suite of local, rotating simulations in cartesian plane layers.
+Primarily, I will report temperature distributions within the icy shell. I will also investigate global transport quantities, such as convected heat, and structural quantities, such as latitudinal profiles of temperature. 
+These latter results can be compared to existing studies \citep{dL23,kS19,jK22} to determine whether the CHT setup has significant effects on the convection itself.
+\subsection{Double Diffusive convection}
+I will also investigate double-diffusive convection (DDC) in a non-rotating and slowly rotating (moderate $Ek$) context. Due to the significant computational constraints, I propose to study a spherical shell geometry for only non-rotating and slowly rotating ($Ek = 10^{-4}$) flows. I will supplement these results with a suite of local, rotating simulations in cartesian plane layers. All simulations will be performed at $Le = 10$
 
-\small
-\bibliography{References,journal_abbreviations}%jfm-bib,References}
+\begin{multicols}{2}
+%\bibliography{References,journal_abbreviations}%jfm-bib,References}
+
+\printbibliography
+
+\end{multicols}
 \end{document}
