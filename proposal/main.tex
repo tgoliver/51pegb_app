@@ -1,12 +1,16 @@
 \documentclass{article}
 
 \usepackage{amsmath}
+\usepackage{adjustbox}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{multicol}
 \usepackage{hyperref}
-\usepackage{xcolor}
 \usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{tabularray}
+\usepackage{sidecap}
 %\usepackage{natbib,url}
 \usepackage[backend=biber,style=numeric,maxnames =2,giveninits = true]{biblatex}
 \addbibresource{journal_abbreviations.bib}
@@ -41,6 +45,8 @@
 \DeclareBibliographyAlias{article}{std}
 \DeclareBibliographyAlias{book}{stdbook}
 \AtBeginBibliography{\small}
+\definecolor{gray_c}{rgb}{0.745, 0.898, 0.898}
+\definecolor{gray_h}{rgb}{0.43, 0.72, 0.72}
 
 \def\epo{\epsilon\rightarrow 0}
 \def\lb{\left(}
@@ -72,45 +78,96 @@ Indeed, a better understanding of coupled ice-ocean studies is one of the key fu
 The proposed project would investigate forward, hydrodynamical models in which the coupling between the liquid ocean and icy surface is included. Two different coupling mechanisms will be studied. 
 First, a conjugate heat transfer (CHT) model, in which the time-varying temperature profile in the icy shell is solved, will be built and run, which will provide new insight into the surface response to the underlying convection. Second, the double diffusion process, in which the bouyancy effects of both temperature and salinity are accounted for, will be investigated in the context of the ice-ocean boundary. Both studies will use 3D forward models of rotating convection in full spherical shells. 
 \section{Background}
-Europa, Callisto, and Ganymede, as well as the Saturnian moons Enceladus and Triton, were identified as likely ocean worlds after data started returning from the \textit{Galileo} and \textit{Cassini} missions \citep{fN16}.
+Europa, Callisto, and Ganymede, as well as the Saturnian moons Enceladus and Triton, were identified as likely ocean worlds after data began to return from the \textit{Galileo} and \textit{Cassini} missions \citep{fN16}.
 Both gravity and magnetic measurements aided in the discovery, but in the case of Europa, the latter proves more convincing. 
 Since the magnetic dipole of Jupiter is tilted about $10^{\circ}$ with respect to the orbital plane, the Jovian moons experience a magnetic induction as they orbit the planet.
-Induced magnetic fields were measured by \textit{Galileo}, and it has been determined that a conducting ocean near the surface is likely necessary to explain the measurements \citep{fN16,cZ00}. 
+Induced magnetic fields were measured by \textit{Galileo}, and it has been determined that a conducting ocean near the surface is likely necessary to explain observations\citep{fN16,cZ00}. 
 
 A variety of forcing mechanisms have been proposed and discussed, and it is likely that the oceans are turbulent and capable of convecting a large amount of heat and chemicals between the solid interior and icy crust.
-These mechanisms include electromagnetic coupling between the conducting ocean and the Jovian magnetic field \citep{cGlP19} and a variety of mechanical effects such as tides and precession \citep{kS24}. 
+These mechanisms include electromagnetic coupling\citep{cGlP19} and a variety of mechanical effects such as tides and precession \citep{kS24}. 
 Here I propose to study buoyantly driven flows, in which variations in the fluid density drive convection.
-Density are usually attributed to two separate effects-- thermal and compositional heterogeneities.
+Density variations are usually attributed to two separate effects-- thermal and compositional heterogeneities.
 Thermally driven flows can be driven by radiogenic heating from the silicate core \citep{kS14,kS19,jK22} or tidal heating \citep{gT03,dL23}, which results in heterogeneous thermal forcing and may explain lateral variations in ice shell thickness. 
 Compositional buoyancy is usually discussed in the context of salt fluxes near the outer boundary. 
-Freezing (melting) can increase (decrease) salinity. The associates density variations drives convection and References \citep{yA21,wK22} predict that this mechanism serves to flatten the ice shell of Europa (ie.  homogenous thickness). 
-
-From a forward modeling perspective, the largest challenge we face is the disparity between the spatial and temporal scales relevant to geophysical bodies, and the scales that we can realistically simulate. We usually formalize this issue in terms of non-dimensional numbers that reflect the range of scales in the physical problem. Alterntively, we can think of these quantities as ratios of different forcing terms in the governing equations. 
-In a geophysical and astrophysical context, there are two non-dimensional numbers of particular importance: the Rayleigh and Ekman numbers. The Rayleigh number $Ra$ describes the ratio of buoyancy to diffusivity. For planetary bodies, $Ra$ is very large, generally indicating vigourous convection.
-The Ekman number $Ek$ approximates the ratio of viscous diffusion to Coriolis effects associated with the rotation of the planet. Due to the large spatial scales, values for $Ek$ tend to be very small, indicating that rotation plays a dominant role.
-The Nusselt number $Nu$ is the ratio of total heat transfer to conductive heat transfer and is greater than $1$ for convective problems. The Prandtl number $Pr$ is the ratio of thermal to momentum diffusivity and is beleived to be $O\lb 10\rb $ for the icy moons \citep{kS24}.
-The definition for these quantities are
-\[Ra = \frac{g\alpha\Delta T D^{3}}{\nu\kappa}\;\;\;Ek = \frac{\nu}{D^{2}\Omega}\;\;\; Pr = \frac{\nu}{\kappa}\;\;\; Nu = \frac{hD}{k},\]
-where $g$ is the surface gravitational acceleration, $\alpha$ is the coefficient of thermal expansion, $D$ is the ocean thickness, $\nu$ and $\kappa$ are the diffusivities of momentum and temperature respectively, $\Omega$ is the planetary rotation rate, $h$ is the total heat transfer, and $k$ is the thermal conductivity. $\Delta T$ indicates the temperature between the ocean surface and floor.
-A related value $Ra_{s}$ for compositional convection can be defined in a similar manner by replacing the appropriate values for $\alpha,\kappa,$ and $\Delta T.$
-To take Europa as an example, predicted values of $Ra$ and  $Ek$ are $O\lb 10^{20}\rb $ and $O\lb 10^{-12}\rb $ respectively, however modern direct numerical simulations (DNS) have only reached values of $Ra \sim 10^{8}$ and $Ek \sim 10^{-5}.$ \citep{dL23}. In a broader geophysical context, more aggressive simulations have been performed \textcolor{red}{token citations \citep{cG19}}, however all fall significantly short of reaching the target values. For icy moons, it is particularly difficult to reach small values of $Ek$ because the ocean depth is much smaller than the planetary radius. As such, the usual procedure is to attempt to establish scaling laws with the non-dimensional parameters by simulating at moderate values, and then extrapolating to planetary values.
+Freezing (melting) can increase (decrease) salinity. The associate density variations drives convection and References \citep{yA21,wK22} predict that this mechanism serves to flatten the ice shell of Europa (ie.  homogenous thickness). 
+\subsection{Non-dimensional parameters and flow regimes}
 \begin{figure}
 	\begin{center}
-		\includegraphics[width=0.6\textwidth]{figures/reg_diagram}
+		\includegraphics[width=0.8\textwidth]{figures/reg_diagram}
 	\end{center}
 	\caption{Regime diagram for rotating convection, adapted from \citep{dL23,tG16}. The region left of the solid black line represent DNS results at $Pr = 1$ for a Europa-like geometry\citep{aB22}. The region right of the black line represents scaling predictions from \citep{tG16}. Dashed lines represent extrapolations of asymptotic predictions into the DNS region. Crosses and stars give the parameter space of modern simulations from Lemasquerier et al. 2023\citep{dL23} and Soderlund 2019\citep{kS19} respectively. Regions enclosed by dotted lines represent approximate parameter space for Europa and Ganymede \citep{dL23,kS19}. Red markers indicate proposed simulations for conjugate heat transfer (CHT) study.}
 	\label{f:reg_d}
 \end{figure}
+In simulating geophysical flows, there is often a large disparity between the spatial and temporal scales relevant to planetary bodies, and the scales that we can realistically compute. Usually this issue is formalized in terms of non-dimensional numbers that reflect the range of scales in the physical problem. %Alterntively, we can think of these quantities as ratios of different forcing terms in the governing equations. 
+In a geophysical and astrophysical context, there are two non-dimensional numbers of particular importance: the Rayleigh and Ekman numbers. The Rayleigh number $Ra$ describes the ratio of buoyancy to diffusivity. For planetary bodies, $Ra$ is very large, generally indicating vigourous convection.
+The Ekman number $Ek$ approximates the ratio of viscous diffusion to Coriolis effects. Values for $Ek$ tend to be very small, indicating that rotation plays a dominant role.
+Two other quantities of importance are the Nusselt number, $Nu$, and Prandtl number, $Pr$. 
+They are the ratio of total heat transfer to conductive heat transfer and the ratio of momentum to thermal diffusivity respectively \citep{kS19}. 
+Explicitly, these parameters are
+\[Ra = \frac{g\alpha\Delta T D^{3}}{\nu\kappa_{T}}\quad Ek = \frac{\nu}{\Omega D^{2}} \quad Nu = \frac{hD}{k_{O}} \quad Pr= \frac{\nu}{\kappa_{T}},\]
+where $g$ is the surface gravitational acceleration, $\alpha$ is the coefficient of thermal expansion, $D$ is the ocean thickness, $\nu$ and $\kappa_T$ are the diffusivities of momentum and temperature respectively, $\Omega$ is the planetary rotation rate, $h$ is the total heat transfer, and $k_O$ is the thermal conductivity of the ocean. $\Delta T$ indicates the temperature between the ocean surface and floor. 
+A compositional Rayleigh number $Ra_{S}$ can be defined by replacing $\alpha, \Delta T,\text{ and, }\kappa_{T}$ with the associated quantities.
+%Definitions and approximate values of these parameters are given in table \ref{t:nondim}.
+%\begin{table}
+%\begin{center}
+%\begin{tabular}{|c|c|c|c|c|c|c|}
+%\hline
+%Values&$Ra$ &$Ek$ &$Nu$ & $Pr$ &$Bi$ &$Le$\\
+%\hline
+%Definition&$\frac{g\alpha\Delta T D^{3}}{\nu\kappa_{T}}$& $\frac{\nu}{D^{2}\Omega}$ %Ra,Ek
+%	  &$\frac{hD}{k_o}$ &$\frac{\nu}{\kappa_{T}}$ %Nu,Pr
+%	  &$\frac{hD_i}{k_{i}}$ &$\frac{\kappa_{T}}{\kappa_{S}}$\\%Bi,Le
+%	  \hline
+%\end{tabular}
+%\end{center}
+%\caption{Definitions of non-dimensional parameters. $g$ is the surface gravitational acceleration, $\alpha$ is the coefficient of thermal expansion, $D$ is the ocean thickness, $\nu$ and $\kappa$ are the diffusivities of momentum and temperature respectively, $\Omega$ is the planetary rotation rate, $h$ is the total heat transfer, and $k_o(i)$ is the thermal conductivity of the ocean (ice). $\Delta T$ indicates the temperature between the ocean surface and floor. Approximate values for icy moons shown in figure \ref{f:reg_d}}.
+%\label{t:nondim}
+%\end{table}
+%\begin{SCtable}[50]%{l}{5.5cm}
+%	%\begin{adjustbox}{minipage=\linewidth,bgcolor={gray_c}}
+%%\begin{tabular}{|c|c|}
+%	\large
+%\begin{tblr}{
+%    colspec = {|c|c|},
+%    row{1} = {gray_h},
+%    row{2-7} = {gray_c},
+%  }
+%\hline
+%Parameter&Definition\\%$Ra$ &$Ek$ &$Nu$ & $Pr$ &$Bi$ &$Le$\\
+%\hline
+%$Ra$&$\frac{g\alpha\Delta T D^{3}}{\nu\kappa_{T}}$\\
+%\hline
+%$Ek$ &$\frac{\nu}{D^{2}\Omega}$\\
+%\hline
+%$Nu$&$\frac{hD}{k_O}$\\
+%\hline
+%$Pr$&$\frac{\nu}{\kappa_{T}}$\\
+%\hline
+%$Bi$ &$\frac{hD_i}{k_{i}}$\\
+%\hline
+%$Le$ &$\frac{\kappa_{T}}{\kappa_{S}}$\\
+%\hline
+%%\end{tabular}
+%\end{tblr}
+%\caption{Definitions of non-dimensional parameters. $g$ is the surface gravitational acceleration, $\alpha$ is the coefficient of thermal expansion, $D$ is the ocean thickness, $\nu$ and $\kappa$ are the diffusivities of momentum and temperature respectively, $\Omega$ is the planetary rotation rate, $h$ is the total heat transfer, and $k_o(i)$ is the thermal conductivity of the ocean (ice). $\Delta T$ indicates the temperature between the ocean surface and floor. Approximate values for icy moons shown in figure \ref{f:reg_d}.}
+%\label{t:nondim}
+%%\end{adjustbox}
+%
+%\end{SCtable}
+
+To take Europa as an example, predicted values of $Ra$ and  $Ek$ are $O\lb 10^{20}\rb $ and $O\lb 10^{-12}\rb $ respectively, however modern direct numerical simulations (DNS) have only reached values of $Ra \sim 10^{8}$ and $Ek \sim 10^{-5}.$ \citep{dL23}. In a broader geophysical context, more aggressive simulations have been performed \textcolor{red}{token citations \citep{cG19}}, however all fall significantly short of reaching the target values. For icy moons, it is particularly difficult to reach small values of $Ek$ because the ocean depth is much smaller than the planetary radius. As such, the usual procedure is to attempt to establish scaling laws with the non-dimensional parameters by simulating at moderate values, and then extrapolating to planetary values.
 
 To further complicate matters, it is insufficient to establish scaling relations for each non-dimensional parameter independently, because the flow behaviours can vary wildly depending on the particular combination of the non-dimensional parameters. 
 For example, at a value of $Ra = 10^{8}$ a non-rotating flow ($Ek\rightarrow \infty$) is expected to vigourously convect, however rapid rotation (low  $Ek$) will stifle and change the structure of the convection, or even arrest it entirely. 
 Figure \ref{f:reg_d} displays a cross-section of $Ek,Ra$ parameter space, and the associated regimes. The ordinate has been rescaled by $Ek^{4/3}$ because for rotating flows the parameter $RaEk^{4/3}$ determines the boundary between conduction and convection \citep{sC61}.
 
-For $RaEk^{4/3}<O\lb 1\rb,$  rotational effects dominate the system and supress radial motion. This regime is referred to as conductive, since all heat is transported conductively. As $Ra$ is increased, convection sets in as axially stretched flows conforming to the Taylor-Proudman theorem \citep{gB53}, which dictates that rapidly-rotating flows remain invariant along the axis of rotation. Such dynamics are known as geostrophic.
-Geostrophic flows are laminar over a small range of $Ra,$ but quickly become turbulent. Geostrophy holds over large time and length scales, but on small scales low order fluctuations make the dynamics highly non-linear.
-This regime is often referred to as ``rapidly rotating'' or ``geostrophic turbulence'' \citep{kJ12}.
-Further increase of $Ra$ yields the ``transitional" regime, where geostrophy no longer holds, but flows are still rotationally influenced.
-Although significant uncertainty exists, it is believed that for the Jovian ocean worlds the primary regime of interest is the Transitional regime, in which rotation, buoyancy, and pressure play leading order roles \citep{dL23,tG16}.
+For small $Ek$, rotational effects dominate the system and suppress radial motion. The ``conductive,'' ``weakly non-linear,'' and ``rapidly rotating'' regimes\citep{tG16,kJ12} are all characterized by axially stretched flows conforming to the Taylor-Proudman (TP) theorem at leading order. TP dictates that rapidly-rotating flows remain invariant along the axis of rotation \citep{gB53}.
+%As $Ra$ is increased, convection sets in as axially stretched flows conforming to the Taylor-Proudman theorem \citep{gB53}, which dictates that rapidly-rotating flows remain invariant along the axis of rotation. Such dynamics are known as geostrophic.
+%Geostrophic flows are laminar over a small range of $Ra,$ but quickly become turbulent. Geostrophy holds over large time and length scales, but on small scales low order fluctuations make the dynamics highly non-linear.
+%This regime is often referred to as ``rapidly rotating'' or ``geostrophic turbulence'' \citep{kJ12}.
+
+Further increase of $Ra$ yields the ``transitional" regime, where the TP constraint is significantly relaxed, but flows are still rotationally influenced.
+Although significant uncertainty exists, it is believed that for the Jovian ocean worlds the primary regime of interest is the transitional regime, in which rotation, buoyancy, and pressure play leading order roles \citep{dL23,tG16}.
 
 Most studies \citep{kS19, dL23} have investigated only the ocean domain, and have prescribed boundary conditions at the ocean-ice interface to represent the fixed melting temperature of the ice. 
 A model with a dynamic, melting icy boundary has been studied, however the authors were primarily interested in the resulting topography. The fast timescale heat fluctuations in the icy shell due to the underlying convection were not investigated \citep{jK24}. 
@@ -120,11 +177,21 @@ CHT is a simulation configuration in which a solid boundary is included in the s
 where $k_{f\lb i\rb }$ is the thermal conductivity of the fluid (ice) and $D_{i}$ is the ice depth.
 Estimates for Europa therefore suggest $Bi \sim O\lb 10^{6}\rb$ \citep{dL23}. When $Bi>1,$ the conjugate problem is considered relevant, and therefore this process likely plays a role in the evolution of icy shells.
 \subsection{Compositional convection}
-On Earth, solutal composition is known to play a dominant role in oceanic convection \textcolor{red}{indicate you know what you're talking about....} The electrical conductive properties of the Jovian satellites likely imply salty oceans\citep{cZ00}, which suggests a variety of consequences. At pressures relevant to the icy moons, salinity can reverse the sign of the thermal expansivity coefficient $\alpha$ at temperatures close to, but greater than, the melting temperature. This means that colder fluid is less dense, which may allow for the generation of a buoyantly stable layer that inhibits heat and mass transport \citep{aT64}. 
-Furthermore, salinity affects fluid density even in the absence of temperature variations. This mechanism provides a second source of buoyancy and can yield double diffusive convection (DDC). The molecular diffusivities of salt and temperature are different; a consequence is that even stably stratified fluids are convectively unstable under certain circumstances \citep{tR13}. The ratio $\kappa_T/ \kappa_S=Le$ is the Lewis number, and, based on terrestial values, is $O(10^2)$.
-From a forward model perspective, the DDC problem has primarily been studied in cartesian plane layers \citep{gM12,}, however two studies have investigated spherical shells \textcolor{red}{Monville 19,and Mather 21, can also mention Ashkenazy}.
+%On Earth, salinity is known to play an important role in oceanic convection. Salt fingering is regularly observed in terrestial oceans\citep{jT73} and is understood to result from the interaction between a stable temperature gradient and unstable salinity gradient. The freezing and melting of sea ice. 
+
+The electrical conductive properties of the Jovian satellites likely imply salty oceans\citep{cZ00}, which suggests a variety of consequences. At pressures relevant to the icy moons, salinity can reverse the sign of the thermal expansivity coefficient $\alpha$ at temperatures close to, but greater than, the melting temperature. This means that colder fluid is less dense, which may allow for the generation of a buoyantly stable layer that inhibits heat and mass transport \citep{aT64}. 
+Furthermore, salinity affects fluid density even in the absence of temperature variations. 
+This mechanism provides a second source of buoyancy and can yield double diffusive convection (DDC). The molecular diffusivities of salt and temperature are different; a consequence is that even stably stratified fluids are convectively unstable under certain circumstances \citep{tR13}. 
+The ratio $\kappa_T/ \kappa_S=Le$ is the Lewis number, and, based on terrestial values, is $O(10^2)$.
+On Earth, sea ice often provides a reservoir of cold, fresh water at the ocean surface. 
+Warmer, salty water underneath implies an unstable temperature gradient and stable salinity gradient, which can lead to long-lived layers of fluid separated by diffusive boundaries which control vertical transport \citep{mT08}
+This situation has been studied extensively in the terrestial ocean context\citep{jT73,jT02}, although the application to icy moons is not clear. The primary difference is that relative to the planetary radius, the ocean depth for the icy moons is significantly greater than Earth's oceans, which has significant implications for the effects of rotation.
+From a planetary perspective, the DDC problem has primarily been studied in cartesian plane layers without rotation\citep{gM12}, however studies have investigated rotating spherical shells \citep{rM19,jM21} in the context of the Earth's liquid core. Reference \citep{rM19} determined that in spheres the primary convective instability is inviscid, which suggests that double diffusive systems may be significantly more turbulent than purely thermal systems at similar parameter regimes. However they considered the case where salinity gradients are unstable and temperature gradients are stable; the situation opposite what is expected for icy moons.
+
+A global ciruclation model for icy moons was simulated in reference \citep{yA21}. They suggest that salinity is the dominant source of buoyancy in Europa, and that the convection should serve to homogenize the ice shell thickness. However, $Le=1$ (ie. equal thermal and compositional diffusivity) which means that instabilities associated with DDC are not included in the study.
+\textcolor{red}{Talk about rafa's paper}\citep{jF24}.
 \section{Proposed project and methodology}
-I propose two sets of simulations in order to study ice-ocean coupling in the icy moons. The first study will involve the conjugate heat transfer (CHT) model and will be performed within the state of the art parameter regimes previously reported by references\citep{dL23,kS19} (which do not involve the CHT framework).
+I propose two sets of simulations in order to study ice-ocean coupling in the icy moons. The first study will involve the CHT model and will be performed within the state of the art parameter regimes previously reported by references\citep{dL23,kS19} (which do not involve the CHT framework).
 The second study will focus on double diffusion (DD) of temperature and salinity. The proposed simulations are listed in table \ref{t:param}.
 \subsection{Conjugate heat transfer}
 \begin{table}
@@ -135,19 +202,20 @@ Model&Geometry&$Ra$&$Ek$&$D/D_{i}$ or $Ra_s$\\
 \hline
 CHT& Shell&$\lb 5 \times 10^{6} - 2 \times 10^{8} \rb $ & $3 \times 10^{-4} $ & $2,10$\\
 \hline
-CHT& Shell&$\lb 5 \times 10^{6} - 1 \times 10^{9} \rb $ & $1 \times 10^{-5} $ & $2,10$\\
+CHT& Shell&$\lb 5 \times 10^{6} - 1 \times 10^{9} \rb $ & $1 \times 10^{-4} $ & $2,10$\\
 \hline
 CHT& Shell&$\lb 5 \times 10^{7} - 2 \times 10^{9} \rb $ & $3 \times 10^{-5} $ & $2,10$\\
 \hline
-DD& Shell & $10^5$& $\infty$&$10^4-10^5$\\
+DDC& Shell & $10^5$& $\infty$&$10^4-10^5$\\
 \hline
-DD& Shell & $10^5$& $10^{-4}$&$10^4-10^5$\\
+DDC& Shell & $10^5$& $10^{-4}$&$10^4-10^5$\\
 \hline
-DD& Plane & $5\times10^8$& $10^{-6}$&$10^8-5\times10^9$\\
+DDC& Plane & $10^5$& $10^{-6}-10^{-4}$&$10^{4}-10^{6}$\\
 \hline
 \end{tabular}
 \end{center}
-\caption{Proposed parameter space. The rightmost column presents the ratio of ocean to ice thicknesses for the CHT model and the compositional Rayleigh number for the DDC model. \textcolor{red}{Fix your ekman values, should be $10^{-4}$ not $3\times10^{-4}$}}
+\caption{Proposed parameter space. The rightmost column presents the ratio of ocean to ice thicknesses for the CHT model and the compositional Rayleigh number for the DDC model. 
+}
 \label{t:param}
 \end{table}
 I will explore Boussinesq convection in a thin, liquid shell surrounded by a thermally conducting layer. 
@@ -156,11 +224,12 @@ At larger values of $Ek,$ I will simulate the transitional and non-rotating regi
 The hydrodynamic code \texttt{Nek5000}\citep{nek5000} is capable of solving the CHT problem and I have already used the code extensively to solve related geophysical problems. 
 Based on the numerical resolutions reported in \citep{dL23}, I estimate that $3\times 10^{6}$ CPU-hours will be necessary to complete these simulations.
 
-Primarily, I will report temperature distributions within the icy shell. I will also investigate global transport quantities, such as convected heat, and structural quantities, such as latitudinal profiles of temperature. 
+Primarily I will report temperature distributions within the icy shell. I will also investigate global transport quantities, such as convected heat, and structural quantities, such as latitudinal profiles of temperature. 
 These latter results can be compared to existing studies \citep{dL23,kS19,jK22} to determine whether the CHT setup has significant effects on the convection itself.
 \subsection{Double Diffusive convection}
-I will also investigate double-diffusive convection (DDC) in a non-rotating and slowly rotating (moderate $Ek$) context. Due to the significant computational constraints, I propose to study a spherical shell geometry for only non-rotating and slowly rotating ($Ek = 10^{-4}$) flows. I will supplement these results with a suite of local, rotating simulations in cartesian plane layers. All simulations will be performed at $Le = 10$
+I will also investigate double-diffusive convection (DDC) in a non-rotating and slowly rotating (moderate $Ek$) context. Due to the significant computational constraints, I propose to study a spherical shell geometry for only non-rotating and slowly rotating ($Ek = 10^{-4}$) flows. I will supplement these results with a suite of local, rotating simulations in cartesian plane layers. All simulations will be performed at $Le = 10$. The chosen parameter values 
 
+\textcolor{red}{Chose parameter values based on Rafa's paper}
 \begin{multicols}{2}
 %\bibliography{References,journal_abbreviations}%jfm-bib,References}
 
