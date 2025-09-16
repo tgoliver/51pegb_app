@@ -68,7 +68,7 @@ I propose to study to processes important to the interaction between the ocean a
 First, I will study a conjugate heat transfer model in which the surface response to underlying convection is directly simulated. No prior simulations of this type exist in the planetary literature. Second, I will investigate a double diffusive model, involving the coupled dynamics of solutal and thermal buoyancy. This process is thought to be particularly important near the ocean-ice interface where melting ice releases cold, fresh water into the underlying ocean.
 \section{Intellectual Merit}
 The solar system contains a number of icy bodies, many of which are thought to be ``ocean worlds,'' that may be suitable candidates for the habitability of life.
-The primary objective of NASA's \textit{Europa Clipper} (EC) (\cite{pC14_JUICE}) and ESA's \textit{Jupiter Icy Moons Explorer} (JUICE)\citep{oG13} missions is to investigate Europa, Ganymede, and Callisto, three Jovian satellites believed to be ocean worlds. Each is expected contain salty, liquid oceans underneath thin icy shells \citep{rP99,fN16}, and both EC and JUICE aim to determine whether these bodies contain necessary conditions for life\citep{tB24}.
+The primary objective of NASA's \textit{Europa Clipper} (EC) (\cite{pC14_JUICE}) and ESA's \textit{Jupiter Icy Moons Explorer} (JUICE)\citep{oG13} missions is to investigate Europa, Ganymede, and Callisto, three Jovian satellites believed to be ocean worlds. Each is expected contain salty, liquid oceans underneath thin icy shells \citep{rP99,fN16}, and both EC and JUICE aim to determine whether these bodies contain necessary conditions for life\citep{tB24}. Figure \ref{f:pic}(a) illustrates a proposed structure.
 The sub-surface oceans link the solid cores of these moons to their icy exteriors, and are therefore expected to play an important role in the transport of heat and chemicals to their surfaces \citep{kS20}. 
 
 \begin{wrapfigure}{R}{0.6\textwidth}
@@ -77,8 +77,8 @@ The sub-surface oceans link the solid cores of these moons to their icy exterior
 		\quad
 	\subfloat[][]{\includegraphics[width=0.25\textwidth]{figures/conv}}
 	\end{center}
-	\caption{(a) Artist interpretation of subsurface ocean on Europa (NASA/JPL-Caltech). (b) Simulation of thermal convection in a planetary core\citep{tO25}.}
-	\label{f:}
+	\caption{(a) Artist interpretation of subsurface ocean on Europa, not to scale (NASA/JPL-Caltech). (b) Simulation (by author) of thermal convection in a planetary core\citep{tO25}.}
+	\label{f:pic}
 \end{wrapfigure}
 The dynamics of these oceans are poorly understood, and neither EC nor JUICE will be able to make direct observations of the oceans. 
 Therefore, forward numerical simulations are necessary to understand the interior dynamics. 
@@ -87,7 +87,7 @@ Current constraints on the thickness of Europa's ice shell, for example, range b
 Observations such as these will hint at the ocean dynamics, but only through processes not currently understood. In order to make the best use of EC and JUICE, it is necessary to have models that allow us to extrapolate surface measurements down to the oceans.
 Indeed, a better understanding of coupled ice-ocean studies is one of the key future issues outlined in the most recent review of icy moon oceanography \citep{kS24}. 
 
-The proposed project would investigate forward, hydrodynamical models in which the coupling between the liquid ocean and icy surface is included. Two different coupling mechanisms will be studied. 
+I propose to  investigate forward, hydrodynamical models in which the coupling between the liquid ocean and icy surface is included. Two different coupling mechanisms will be studied. 
 First, a conjugate heat transfer (CHT) model, in which the time-varying temperature profile in the icy shell is solved, will be built and run, which will provide new insight into the surface response to the underlying convection. Second, the double diffusion process, in which the bouyancy effects of both temperature and salinity are accounted for, will be investigated in the context of the ice-ocean boundary. Both studies will use 3D forward models of rotating convection in full spherical shells. 
 \section{Background}
 Europa, Callisto, and Ganymede, as well as the Saturnian moons Enceladus and Triton, were identified as likely ocean worlds after data began to return from the \textit{Galileo} and \textit{Cassini} missions \citep{fN16}.
@@ -187,7 +187,7 @@ A compositional Rayleigh number $Ra_{S}$ can be defined by replacing $\alpha, \D
 %
 %\end{SCtable}
 
-To take Europa as an example, predicted values of $Ra$ and  $Ek$ are $O\lb 10^{20}\rb $ and $O\lb 10^{-12}\rb $ respectively. Modern direct numerical simulations (DNS) have only reached values of $Ra \sim 10^{8}$ and $Ek \sim 10^{-5}$\citep{dL23}. In studies of different planetary bodies, more aggressive simulations have been performed (eg. \citep{cG19,tG16,tO25}), however all fall significantly short of reaching realistic values. For icy moons, it is particularly difficult to reach small values of $Ek$ because the ocean depth is much smaller than the planetary radius. The procedure, therefore, is to attempt to establish scaling laws with the non-dimensional parameters by simulating at moderate values, and then extrapolating to planetary values.
+To take Europa as an example, predicted values of $Ra$ and  $Ek$ are $O\lb 10^{20}\rb $ and $O\lb 10^{-12}\rb $ respectively. Modern direct numerical simulations (DNS) have only reached values of $Ra \sim 10^{8}$ and $Ek \sim 10^{-5}$\citep{dL23}. In studies of different planetary bodies, more aggressive simulations have been performed (eg. figure \ref{f:pic}(b), references \citep{cG19,tG16,tO25}), however all fall significantly short of reaching realistic values. For icy moons, it is particularly difficult to reach small values of $Ek$ because the ocean depth is much smaller than the planetary radius. The procedure, therefore, is to attempt to establish scaling laws with the non-dimensional parameters by simulating at moderate values, and then extrapolating to planetary values.
 
 It is insufficient to establish scaling relations for each non-dimensional parameter independently. 
 %Flow behaviours can vary wildly depending on the particular combination of the non-dimensional parameters. 
