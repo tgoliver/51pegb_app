@@ -1,13 +1,16 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{subfig}
-\usepackage[backend = biber]{biblatex}
+\usepackage[backend = biber,style=numeric,maxnames =2,giveninits = true]{biblatex}
 \addbibresource{journal_abbreviations.bib}
 \addbibresource{../../proposal/References.bib}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage{titlesec}
 \usepackage[margin = 1in]{geometry}
 
 \def\epo{\epsilon\rightarrow 0}
@@ -17,22 +20,40 @@
 \def\rs{\right] }
 \def\ep{\epsilon}
 
+\AtEveryBibitem{% Clean up the bibtex rather than editing it
+ \clearfield{isbn}
+ \clearfield{doi}
+ \clearfield{url}
+ \clearfield{issn}
+ }
+\sectionfont{\fontsize{12}{15}\selectfont}
+\subsectionfont{\fontsize{12}{15}\selectfont}
 \title{}
 \author{}
 \date{}
 
 \begin{document}
-\section*{Rationale for Host Institution: UC San Diego}
-UC San Diego is the home of the Scripps Institution for Oceanography as well as a new department of Astronomy and Astrophysics (AYA). I propose to work with Dr. William Young and Dr. Lia Siegelman at SIO and collaborate with Dr. Samantha Trumbo in AYA.
+\pagestyle{fancy}
+\thispagestyle{fancy}
+\setlength{\headheight}{25pt}
+%... then configure it.
+\fancyhf{} % clear all header fields
+\fancyhead[L]{\textcolor{red}{Tobias Oliver\\
+		Rationale for University of California San Diego\\
+Proposed Mentor: Professor Lia Siegelman}}
+\fancyfoot[R]{\thepage}
+%UC San Diego is the home of the Scripps Institution for Oceanography (SIO) as well as a new department of Astronomy and Astrophysics (AYA). I propose to work with Dr. Lia Siegelman and Dr. William Young  at SIO and collaborate with Dr. Samantha Trumbo in AYA.
 \subsection*{Scripps institution and faculty support}
-Dr. Young and Dr. Siegelman are faculty at SIO at UC San Diego. Dr. Young and Dr. Siegelman are physical oceanographers who have recently investigated astrophysical fluid mechanics in the context of Jovian polar dynamics and the formation of the polar vortex crystals\cite{lS22,lS22b,lS24}. They are interested in icy moon ocean dynamics and the proposed project involved input from both.
+Dr. Young and Dr. Siegelman are faculty at Scripps Institution for Oceanography (SIO) at UC San Diego. Dr. Young and Dr. Siegelman are physical oceanographers who have recently investigated astrophysical fluid mechanics in the context of Jovian polar dynamics and the formation of the polar vortex crystals\cite{lS22,lS22b,lS24}. They are interested in icy moon ocean dynamics and the proposed project involved input from both.
 
 My research has been primarily focused on geophysical turbulence in the context the Earth's liquid core. Although the fluid dynamics of the liquid core and terrestrial oceans share many similarities, fundamental differences exist in both the physical problem and the scientific approaches. Terrestrial oceans are, relative to their lateral extent, very thin layers, whereas the liquid core is relatively thick. This leads to significantly different mathematical and numerical approaches when attempting to solve the dynamics.
 The oceans of the icy moons almost certainly fall in an intermediate regime between the liquid core and the Earth's oceans, and therefore insight from both fields is required of any investigation. The literature on compositional convection is far richer in the oceanographic context because of the large role that salinity plays in the oceans, and I would benefit greatly from working with both Dr. Siegelman and Dr. Young since salinity is also expected to play such a large role on icy moons. 
-Ice-ocean interactions are also relevant, and Dr. Siegelman has recently been involved in multiple studies (\textit{in prep}) on sea-ice interactions. More broadly, access to the facilities and faculty at SIO would be invaluable to me with respect to \textcolor{red}{ammending knowledge gaps in oceanography}. \textbf{Study of the oceans of the icy moons is at the intersection of physical oceanography and planetary-scale, deep convection. My background in core convection partners well with the oceanographic expertise of Dr. Siegelman and Dr. Young.}
+Ice-ocean interactions are also relevant, and Dr. Siegelman has recently been involved in multiple studies (\textit{in prep}) on sea-ice interactions. 
+%More broadly, access to the facilities and faculty at SIO would be invaluable to me with respect to \textcolor{red}{ammending knowledge gaps in oceanography}. 
+\textbf{Study of the oceans of the icy moons is at the intersection of physical oceanography and planetary-scale, deep convection. My background in core convection partners well with the oceanographic expertise of Dr. Siegelman and Dr. Young.}
 
 \subsection*{Department of Astronomy and Astrophysics}
-The Department of Astronomy and Astrophysics is a new department (est. 2023) at UC San Diego, and is the home department of Dr. Trumbo. Dr. Trumbo is a planetary scientist and expert on Europa surface processes (eg. \cite{sT22,sT23}), and the \textit{Europa Clipper} mission. 
+The Department of Astronomy and Astrophysics is a new department (est. 2023) at UC San Diego, and is the home department of Dr. Trumbo. Dr. Trumbo is a planetary scientist and expert on Europa surface processes, and the \textit{Europa Clipper} mission. 
 A primary goal of the proposed project is to relate theoretical predictions of ocean convection to surface processes. The opportunity to collaborate with Dr. Trumbo would improve our understanding of the capabilities of the \textit{Europa Clipper} mission and allow us to better identify surface indicators of identified ocean processes.
 
 

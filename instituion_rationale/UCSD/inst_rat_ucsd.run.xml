@@ -80,7 +80,7 @@
     </requires>
     <requires type="editable">
       <file>journal_abbreviations.bib</file>
-      <file>../proposal/References.bib</file>
+      <file>../../proposal/References.bib</file>
     </requires>
   </external>
 </requests>

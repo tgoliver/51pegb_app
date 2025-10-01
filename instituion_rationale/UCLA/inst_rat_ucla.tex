@@ -1,14 +1,17 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{subfig}
-\usepackage[backend = biber]{biblatex}
+\usepackage[backend = biber,style=numeric,maxnames =2,giveninits = true]{biblatex}
 \addbibresource{../UCSD/journal_abbreviations.bib}
 \addbibresource{../../proposal/References.bib}
 \usepackage[margin = 1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage{titlesec}
 
 \def\epo{\epsilon\rightarrow 0}
 \def\lb{\left(}
@@ -20,10 +23,25 @@
 \title{}
 \author{}
 \date{}
+\AtEveryBibitem{% Clean up the bibtex rather than editing it
+ \clearfield{isbn}
+ \clearfield{doi}
+ \clearfield{url}
+ \clearfield{issn}
+ }
 
+\sectionfont{\fontsize{12}{15}\selectfont}
+\subsectionfont{\fontsize{12}{15}\selectfont}
 \begin{document}
-\section*{Rationale for Host Institution: UC Los Angeles}
-At UC Los Angeles, I would work with Dr. Jon Aurnou in the Department of Earth, Planetary, and Space Sciences (EPSS).
+\pagestyle{fancy}
+\thispagestyle{fancy}
+%... then configure it.
+\fancyhf{} % clear all header fields
+\fancyhead[L]{\textcolor{red}{Tobias Oliver\\
+		Rationale for University of California Los Angeles\\
+Proposed Mentor: Professor Jon Aurnou}}
+\fancyfoot[R]{\thepage}
+\setlength{\headheight}{25pt}
 \subsection*{SPINlab at EPSS}
 The SPINlab is an experimental fluid dynamics laboratory focused on investigating planetary flows in lab-sized rotating tanks of fluid. The lab is supervised by Dr. Aurnou. Dr. Aurnou oversees a number of different experiments, which would provide excellent validation and inspiration for numerical work. Most relevant, however, is a new, 1 m diameter paraboloidal fluid shell. With heterogrenous boundary heating and topography capabilities, the experiment will model complex processes within thin-shelled icy moons.
 
