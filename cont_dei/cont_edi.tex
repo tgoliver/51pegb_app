@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
@@ -7,6 +7,9 @@
 \usepackage{xcolor}
 \usepackage{subfig}
 \usepackage{biblatex}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage{titlesec}
 \addbibresource{References.bib}
 
 \def\epo{\epsilon\rightarrow 0}
@@ -15,23 +18,35 @@
 \def\ls{\left[ \vphantom]}
 \def\rs{\right] }
 \def\ep{\epsilon}
+\sectionfont{\fontsize{12}{15}\selectfont}
+\subsectionfont{\fontsize{12}{15}\selectfont}
 
 
 \author{}
 \date{}
 
 \begin{document}
-\subsection*{Contributions towards Building a Diverse and Inclusive Field}
-In the University of Colorado Physics department, I have been involved with CU-Prime, a mentorship program that facilitates graduate student support of incoming undergraduates in science, technology, engineering, and math (STEM). 
-The primary focus of the organization is to foster ``positive culture in STEM for those from typically underrepresented populations''\cite{cup}.
+\pagestyle{fancy}
+\thispagestyle{fancy}
+%... then configure it.
+\fancyhf{} % clear all header fields
+\fancyhead[L]{\textcolor{red}{Tobias Oliver\\
+Contributions Towards Building a Diverse and Inclusive Field}}
+\fancyfoot[R]{\thepage}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\subsection*{Contributions towards Building a Diverse and Inclusive Field}
+%\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+Throughout my graduate degree I have been involved with CU-Prime, a mentorship program that facilitates graduate student support of incoming undergraduates in STEM. 
+The program focuses primarily on culture building in STEM and providing positive spaces for typically underrepresented populations\cite{cup}.
 CU-Prime supports a graduate student talk series designed to reach a general undergraduate audience, as well as an introductory, single-credit course in which first year students get the opportunity to design and perform scientific research under the guidance of a graduate student. 
-I have contributed multiple times to the talk series, and volunteered as a teaching assistant for the undergraduate course. 
+I have volunteered my time as a teaching assistant for the undergraduate course and contributed multiple times to the talk series. 
 
-As a teaching assistant, I have been involved in numerous introductory physics classes, however I found this course to be particularly challenging because the students were afforded so much flexibility in their own curriculum.
+I have taught many introductory physics classes,
+however I found this course to be particularly challenging because the students were afforded so much flexibility in their own curriculum.
 The students are required to propose and perform a research project and, I think because scientific research appears to have a huge barrier to entry, they often have a hard time coming up with a project they like, but that feels achievable. 
-I struggled to help because at first I felt similarly. Science is broad and hard, and it is super easy to feel lost.
-But I was advised by senior grad students to simply support the ideas the students were most interested in, so that they had a sense of ownership of the project.
-Unsurprisingly, it's good advice; students are much more likely to remain interested in science, if the science is interesting to them. 
+I struggled to help because at first I felt similarly. In science it is super easy to feel lost.
+A senior graduate student advised that I simply support the ideas the students were most interested in, so that they had a sense of ownership of the project.
+The students were much more likely to remain interested in science, if the science is interesting to them. 
 But more importantly it communicated the message that science is for anyone who has interesting questions to ask.
 
 %In my last year of college, a classmate confessed that she had once considered quitting our physics major because the work -- she felt-- was too hard for her. In hindsight, we both acknowledged that the classes were simply hard for everyone, but she told me that at the time she could not help wondering if the reason she was struggling was because she looked different from most everyone in the class.
@@ -40,7 +55,7 @@ But more importantly it communicated the message that science is for anyone who 
 I enjoy teaching and public outreach, and I try to convey this message as much as I can.
 When I have given the CU-Prime talks (example here \cite{jJ22}), I emphasize my own interests to illustrate why my research is a good fit for me, and how science could be a good fit for my audience. I wish to continuing to prepare and present public research talks aimed at general science audiences.
 \section*{Outreach opportunities at proposed institutions}
-I am proposing to work at either the Scripps Institution of Oceanography (SIO) at UC San Diego, or at UC Los Angeles. The SCOPE program at SIO coordinates outreach opportunities between the San Diego community and researchers at SIO. They facilitate ``meet and greets" where elementary to high school students can interact with researchers and learn about their work.  Hands on demonstrations are encouraged.
+I am proposing to work at either the Scripps Institution of Oceanography (SIO) at UC San Diego, or at UC Los Angeles. The SCOPE program at SIO coordinates outreach opportunities between the San Diego community and researchers at SIO. They connect elementary through high school students with researchers to learn about the research at SIO. 
 Rotating fluids research lends itself remarkably well to this format, because simple, cheap experiments (often less than \$100) with rotating tanks of water can be easily set up and are very interactive. In my experience, even adults enjoy dropping food coloring into tanks of water and watching them swirl around. Furthermore, significant insights about weather and ocean circulation can be gained from these simple  experiments. I would contribute to these events and set up table-top rotating fluid experiments for students to play and learn with.
 
 The SPINlab at UC Los Angeles (the proposed host lab) already facilitates events like this and I would be excited to participate and contribute. The SPINlab also maintains a Youtube channel with outreach films. I would be thrilled to produce a series of videos discussing geophysical and astrophysical flows. 

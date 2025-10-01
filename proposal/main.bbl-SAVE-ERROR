@@ -17,32 +17,33 @@
 \endgroup
 
 \preamble{%
-\newcommand{\jfm}{JFM.~}%
-\newcommand{\pss}{PSS.~}%
-\newcommand{\araa}{ARAA.~}%
+\newcommand{\jfm}{J. Fluid Mech.~}%
+\newcommand{\pss}{Plan Space and Sci. .~}%
+\newcommand{\araa}{Ann. Rev. Astronomy and Astrophys.~}%
 \newcommand{\icarus}{Icarus }%
-\newcommand{\aap}{AAp~}%
+\newcommand{\aap}{Astronomy and Astrophys.~}%
 \newcommand{\physscr}{Phys. Scripta }%
-\newcommand{\ssr}{SSR~}%
-\newcommand{\pnas}{PNAS~}%
-\newcommand{\grl}{GeoRL~}%
-\newcommand{\ncom}{NatCo~}%
-\newcommand{\nat}{Nat~}%
-\newcommand{\ngeo}{NGeo.~}%
-\newcommand{\nast}{NatAs.~}%
-\newcommand{\njp}{NJP~}%
-\newcommand{\prf}{PhRvF }%
-\newcommand{\prr}{PRR }%
-\newcommand{\sadv}{SciAdv~}%
-\newcommand{\jgr}{JGR}%
-\newcommand{\jgrp}{JGRP}%
-\newcommand{\jgro}{JGRO}%
-\newcommand{\ess}{ESS}%
-\newcommand{\apj}{ApJ}%
-\newcommand{\apjl}{ApJL}%
-\newcommand{\gafd}{GAFD}%
-\newcommand{\gji}{GJI}%
-\newcommand{\ncee}{NCEE}%
+\newcommand{\ssr}{Space Sci. Rev.~}%
+\newcommand{\pnas}{Proc. Nat. Acad. Sci.~}%
+\newcommand{\grl}{Geophys. Rev. Let.~}%
+\newcommand{\ncom}{Nat. Comm.~}%
+\newcommand{\nat}{Nature~}%
+\newcommand{\natp}{Nat. Phys.~}%
+\newcommand{\ngeo}{Nat. Geo.~}%
+\newcommand{\nast}{Nat. Astro.~}%
+\newcommand{\njp}{New J. Phys.~}%
+\newcommand{\prf}{Phys. Rev. Fluids~}%
+\newcommand{\prr}{Phys. Rev. Res.~}%
+\newcommand{\sadv}{Sci. Adv.~}%
+\newcommand{\jgr}{J. Geophys. Res.~}%
+\newcommand{\jgrp}{J. Geophys. Res.: Plan.~}%
+\newcommand{\jgro}{J. Geophys. Res.: Ocn.~}%
+\newcommand{\ess}{Earth and Space Sci.~}%
+\newcommand{\apj}{Astrophys. J.~}%
+\newcommand{\apjl}{Astrophys. J. Let.~}%
+\newcommand{\gafd}{Geophys. and Astrophys. Fluid Dyn.~}%
+\newcommand{\gji}{Geophys. J. Int.}%
+\newcommand{\ncee}{Comm. Earth and Env.~}%
 }
 
 
@@ -81,85 +82,6 @@
       \verb{doi}
       \verb 10.1038s41467-021-26710-0
       \endverb
-    \endentry
-    \entry{aB22}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=271f64dd343cdc261b31f62b97c9406e}{%
-           family={Barik},
-           familyi={B\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=4a08c58bb896d70ba1d49f70af6543c9}{%
-           family={Triana},
-           familyi={T\bibinitperiod},
-           given={S.\bibnamedelimi A.},
-           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=ed708ef4bf323e28778ea1893dfdb6ff}{%
-           family={Calkins},
-           familyi={C\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
-        {{hash=9048379c2af0df437d99a16ebde9adc9}{%
-           family={Stanley},
-           familyi={S\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=7c5c67d055213fb1c61279258ac7e6ae}{%
-           family={Aurnou},
-           familyi={A\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{7d40702484bc72eb5a89d2f672f7ab1b}
-      \strng{fullhash}{5d07866b6f833ce2ca49a13b816cea07}
-      \strng{fullhashraw}{5d07866b6f833ce2ca49a13b816cea07}
-      \strng{bibnamehash}{7d40702484bc72eb5a89d2f672f7ab1b}
-      \strng{authorbibnamehash}{7d40702484bc72eb5a89d2f672f7ab1b}
-      \strng{authornamehash}{7d40702484bc72eb5a89d2f672f7ab1b}
-      \strng{authorfullhash}{5d07866b6f833ce2ca49a13b816cea07}
-      \strng{authorfullhashraw}{5d07866b6f833ce2ca49a13b816cea07}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\ess}
-      \field{number}{1}
-      \field{title}{Onset of Convection in Rotating Spherical Shells: Variations With Radius Ratio}
-      \field{volume}{10}
-      \field{year}{2023}
-      \field{pages}{e2022EA002606}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb https://doi.org/10.1029/2022EA002606
-      \endverb
-      \keyw{planetary interiors,rotating convection,spherical shells,eigenvalue,numerical methods,dynamo theory}
-    \endentry
-    \entry{gB53}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=c9981a4cb1fa67e9638e3e167ac5cb2b}{%
-           family={Batchelor},
-           familyi={B\bibinitperiod},
-           given={G.\bibnamedelimi K.},
-           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-      }
-      \strng{namehash}{c9981a4cb1fa67e9638e3e167ac5cb2b}
-      \strng{fullhash}{c9981a4cb1fa67e9638e3e167ac5cb2b}
-      \strng{fullhashraw}{c9981a4cb1fa67e9638e3e167ac5cb2b}
-      \strng{bibnamehash}{c9981a4cb1fa67e9638e3e167ac5cb2b}
-      \strng{authorbibnamehash}{c9981a4cb1fa67e9638e3e167ac5cb2b}
-      \strng{authornamehash}{c9981a4cb1fa67e9638e3e167ac5cb2b}
-      \strng{authorfullhash}{c9981a4cb1fa67e9638e3e167ac5cb2b}
-      \strng{authorfullhashraw}{c9981a4cb1fa67e9638e3e167ac5cb2b}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Quart. J. R. Meteor. Soc.}
-      \field{title}{The condition for dynamical similarity of motions of a frictionless perfect-gas atmosphere}
-      \field{volume}{79}
-      \field{year}{1953}
-      \field{pages}{224\bibrangedash 235}
-      \range{pages}{12}
     \endentry
     \entry{tB24}{article}{}{}
       \name{author}{20}{}{%
@@ -285,86 +207,6 @@
       \verb 10.1007/s11214-024-01069-y
       \endverb
     \endentry
-    \entry{sB22}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=8f8e487675238b8f38e162c98df48f11}{%
-           family={Bire},
-           familyi={B\bibinitperiod},
-           given={Suyash},
-           giveni={S\bibinitperiod}}}%
-        {{hash=4dd961087dbad2953ebcfba2c2a6167d}{%
-           family={Kang},
-           familyi={K\bibinitperiod},
-           given={Wanying},
-           giveni={W\bibinitperiod}}}%
-        {{hash=c4cd0be2fa04426ac283ca873e852e4e}{%
-           family={Ramadhan},
-           familyi={R\bibinitperiod},
-           given={Ali},
-           giveni={A\bibinitperiod}}}%
-        {{hash=4a4669eb523011849860dfae15085c7d}{%
-           family={Campin},
-           familyi={C\bibinitperiod},
-           given={Jean-Michel},
-           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
-        {{hash=bf2941e49d80c7173ad9909a0cbc14f5}{%
-           family={Marshall},
-           familyi={M\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{52bfd99f5362abbbb9ad6fb9ae0e3b1f}
-      \strng{fullhash}{ea206fd46373718774214825d6d402f3}
-      \strng{fullhashraw}{ea206fd46373718774214825d6d402f3}
-      \strng{bibnamehash}{52bfd99f5362abbbb9ad6fb9ae0e3b1f}
-      \strng{authorbibnamehash}{52bfd99f5362abbbb9ad6fb9ae0e3b1f}
-      \strng{authornamehash}{52bfd99f5362abbbb9ad6fb9ae0e3b1f}
-      \strng{authorfullhash}{ea206fd46373718774214825d6d402f3}
-      \strng{authorfullhashraw}{ea206fd46373718774214825d6d402f3}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\jgrp}
-      \field{number}{3}
-      \field{title}{Exploring Ocean Circulation on Icy Moons Heated From Below}
-      \field{volume}{127}
-      \field{year}{2022}
-      \field{pages}{e2021JE007025}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb https://doi.org/10.1029/2021JE007025
-      \endverb
-    \endentry
-    \entry{sC61}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=a9e471e6ac911f861e43e742eac08423}{%
-           family={Chandrasekhar},
-           familyi={C\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {U.K.}%
-      }
-      \list{publisher}{1}{%
-        {Oxford University Press}%
-      }
-      \strng{namehash}{a9e471e6ac911f861e43e742eac08423}
-      \strng{fullhash}{a9e471e6ac911f861e43e742eac08423}
-      \strng{fullhashraw}{a9e471e6ac911f861e43e742eac08423}
-      \strng{bibnamehash}{a9e471e6ac911f861e43e742eac08423}
-      \strng{authorbibnamehash}{a9e471e6ac911f861e43e742eac08423}
-      \strng{authornamehash}{a9e471e6ac911f861e43e742eac08423}
-      \strng{authorfullhash}{a9e471e6ac911f861e43e742eac08423}
-      \strng{authorfullhashraw}{a9e471e6ac911f861e43e742eac08423}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Hydrodynamic and Hydromagnetic Stability}
-      \field{year}{1961}
-    \endentry
     \entry{dA09}{article}{}{}
       \name{author}{2}{}{%
         {{hash=bd9bfa622328f1db9d6b1e27e73d890f}{%
@@ -441,55 +283,6 @@
       \endverb
       \verb{url}
       \verb https://nek5000.mcs.anl.gov
-      \endverb
-    \endentry
-    \entry{jF24}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=0959739fa63f2760ef1315403720c61c}{%
-           family={Fuentes},
-           familyi={F\bibinitperiod},
-           given={J.\bibnamedelimi R.},
-           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=1ee57cd00ccc7948589fa846a0e8897e}{%
-           family={Hindman},
-           familyi={H\bibinitperiod},
-           given={Bradley\bibnamedelima W.},
-           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=5672a00c96c27ba448abdaaca413601c}{%
-           family={Fraser},
-           familyi={F\bibinitperiod},
-           given={Adrian\bibnamedelima E.},
-           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=34c0832bc614bb96855070245e8cd26a}{%
-           family={Anders},
-           familyi={A\bibinitperiod},
-           given={Evan\bibnamedelima H.},
-           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The American Astronomical Society}%
-      }
-      \strng{namehash}{86583101112c68e67c3806bef65b381c}
-      \strng{fullhash}{fae71526f02067516284768e5b963819}
-      \strng{fullhashraw}{fae71526f02067516284768e5b963819}
-      \strng{bibnamehash}{86583101112c68e67c3806bef65b381c}
-      \strng{authorbibnamehash}{86583101112c68e67c3806bef65b381c}
-      \strng{authornamehash}{86583101112c68e67c3806bef65b381c}
-      \strng{authorfullhash}{fae71526f02067516284768e5b963819}
-      \strng{authorfullhashraw}{fae71526f02067516284768e5b963819}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\apjl}
-      \field{number}{1}
-      \field{title}{Evolution of Semiconvective Staircases in Rotating Flows: Consequences for Fuzzy Cores in Giant Planets}
-      \field{volume}{975}
-      \field{year}{2024}
-      \field{pages}{L1}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3847/2041-8213/ad84dc
       \endverb
     \endentry
     \entry{tG16}{article}{}{}
@@ -724,49 +517,6 @@
       \field{pages}{368\bibrangedash 371}
       \range{pages}{4}
     \endentry
-    \entry{kJ12}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=790e1490f3bf4937bf361fd065952906}{%
-           family={Julien},
-           familyi={J\bibinitperiod},
-           given={K.},
-           giveni={K\bibinitperiod}}}%
-        {{hash=3181a18a3c0ea95e96b21bbe825e6329}{%
-           family={Rubio},
-           familyi={R\bibinitperiod},
-           given={A.\bibnamedelimi M.},
-           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=abfdc341cd17215d69809d0ff1f868b7}{%
-           family={Grooms},
-           familyi={G\bibinitperiod},
-           given={I.},
-           giveni={I\bibinitperiod}}}%
-        {{hash=bf7ea9c980b84262563002199046c4f8}{%
-           family={Knobloch},
-           familyi={K\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{4c2232467f2d4f89dcfc2df33648b018}
-      \strng{fullhash}{c332cb991d83fc4cd04de536ff3d6dfc}
-      \strng{fullhashraw}{c332cb991d83fc4cd04de536ff3d6dfc}
-      \strng{bibnamehash}{4c2232467f2d4f89dcfc2df33648b018}
-      \strng{authorbibnamehash}{4c2232467f2d4f89dcfc2df33648b018}
-      \strng{authornamehash}{4c2232467f2d4f89dcfc2df33648b018}
-      \strng{authorfullhash}{c332cb991d83fc4cd04de536ff3d6dfc}
-      \strng{authorfullhashraw}{c332cb991d83fc4cd04de536ff3d6dfc}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\gafd}
-      \field{number}{4-5}
-      \field{title}{{Statistical and physical balances in low Rossby number Rayleigh-Bénard convection}}
-      \field{volume}{106}
-      \field{year}{2012}
-      \field{pages}{392\bibrangedash 428}
-      \range{pages}{37}
-    \endentry
     \entry{wK22}{article}{}{}
       \name{author}{5}{}{%
         {{hash=4dd961087dbad2953ebcfba2c2a6167d}{%
@@ -818,34 +568,6 @@
       \verb 10.1126/sciadv.abm4665
       \endverb
     \endentry
-    \entry{sK66}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=7877398598e6a19b64f508f565192393}{%
-           family={Kato},
-           familyi={K\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{7877398598e6a19b64f508f565192393}
-      \strng{fullhash}{7877398598e6a19b64f508f565192393}
-      \strng{fullhashraw}{7877398598e6a19b64f508f565192393}
-      \strng{bibnamehash}{7877398598e6a19b64f508f565192393}
-      \strng{authorbibnamehash}{7877398598e6a19b64f508f565192393}
-      \strng{authornamehash}{7877398598e6a19b64f508f565192393}
-      \strng{authorfullhash}{7877398598e6a19b64f508f565192393}
-      \strng{authorfullhashraw}{7877398598e6a19b64f508f565192393}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{PASJ}
-      \field{number}{4}
-      \field{title}{Overstable Convection in medium stratified in mean molecular weight}
-      \field{volume}{18}
-      \field{year}{1966}
-      \field{pages}{374\bibrangedash 383}
-      \range{pages}{10}
-    \endentry
     \entry{jK22}{article}{}{}
       \name{author}{2}{}{%
         {{hash=4ba88af0d82e9081211cd5f7219e7635}{%
@@ -867,7 +589,6 @@
       \strng{authornamehash}{83f5433dc3a57b794dc635f578a8c0fb}
       \strng{authorfullhash}{83f5433dc3a57b794dc635f578a8c0fb}
       \strng{authorfullhashraw}{83f5433dc3a57b794dc635f578a8c0fb}
-      \field{extraname}{1}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
@@ -877,38 +598,6 @@
       \field{title}{A numerical model of convective heat transfer in {T}itan’s subsurface ocean}
       \field{volume}{376}
       \field{year}{2022}
-    \endentry
-    \entry{jK24}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=4ba88af0d82e9081211cd5f7219e7635}{%
-           family={Kvorka},
-           familyi={K\bibinitperiod},
-           given={Jakub},
-           giveni={J\bibinitperiod}}}%
-        {{hash=ebb143bffab5a579d93f9beeb5edc074}{%
-           family={Čadek},
-           familyi={Č\bibinitperiod},
-           given={Ondřej},
-           giveni={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{83f5433dc3a57b794dc635f578a8c0fb}
-      \strng{fullhash}{83f5433dc3a57b794dc635f578a8c0fb}
-      \strng{fullhashraw}{83f5433dc3a57b794dc635f578a8c0fb}
-      \strng{bibnamehash}{83f5433dc3a57b794dc635f578a8c0fb}
-      \strng{authorbibnamehash}{83f5433dc3a57b794dc635f578a8c0fb}
-      \strng{authornamehash}{83f5433dc3a57b794dc635f578a8c0fb}
-      \strng{authorfullhash}{83f5433dc3a57b794dc635f578a8c0fb}
-      \strng{authorfullhashraw}{83f5433dc3a57b794dc635f578a8c0fb}
-      \field{extraname}{2}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Icarus}
-      \field{number}{115985}
-      \field{title}{The role of subsurface ocean dynamics and phase transitions in forming the topography of icy moons}
-      \field{volume}{412}
-      \field{year}{2024}
     \endentry
     \entry{dL23}{article}{}{}
       \name{author}{3}{}{%
@@ -940,7 +629,7 @@
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{AGUA}
+      \field{journaltitle}{AGU: Adv.}
       \field{number}{6}
       \field{title}{Europa's Ocean Translates Interior Tidal Heating Patterns to the Ice-Ocean Boundary}
       \field{volume}{4}
@@ -996,99 +685,6 @@
       \endverb
       \verb{url}
       \verb https://ahtt.mit.edu
-      \endverb
-    \endentry
-    \entry{gM12}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=d871f30664963fa5110e65e5d61096b5}{%
-           family={Mirouh},
-           familyi={M\bibinitperiod},
-           given={G.\bibnamedelimi M.},
-           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=de5313fe0cb2b0437f0b73c64cf513fb}{%
-           family={Garaud},
-           familyi={G\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-        {{hash=6381904fadcc5224f7baad3d0ac2918a}{%
-           family={Stellmach},
-           familyi={S\bibinitperiod},
-           given={S.},
-           giveni={S\bibinitperiod}}}%
-        {{hash=0e2c9f23495ff940cda5dfc39ed8a031}{%
-           family={Traxler},
-           familyi={T\bibinitperiod},
-           given={A.\bibnamedelimi L.},
-           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=1c4f45c7254ef22fc517fe9d35e099a3}{%
-           family={Wood},
-           familyi={W\bibinitperiod},
-           given={T.\bibnamedelimi S.},
-           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The American Astronomical Society}%
-      }
-      \strng{namehash}{7bd8f29f9cbe40b2f8da60808ebb2409}
-      \strng{fullhash}{febe383640fb9853d9154e95cefcbf50}
-      \strng{fullhashraw}{febe383640fb9853d9154e95cefcbf50}
-      \strng{bibnamehash}{7bd8f29f9cbe40b2f8da60808ebb2409}
-      \strng{authorbibnamehash}{7bd8f29f9cbe40b2f8da60808ebb2409}
-      \strng{authornamehash}{7bd8f29f9cbe40b2f8da60808ebb2409}
-      \strng{authorfullhash}{febe383640fb9853d9154e95cefcbf50}
-      \strng{authorfullhashraw}{febe383640fb9853d9154e95cefcbf50}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\apj}
-      \field{number}{1}
-      \field{title}{A NEW MODEL FOR MIXING BY DOUBLE-DIFFUSIVE CONVECTION (SEMI-CONVECTION). I. THE CONDITIONS FOR LAYER FORMATION}
-      \field{volume}{750}
-      \field{year}{2012}
-      \field{pages}{61}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/0004-637X/750/1/61
-      \endverb
-    \endentry
-    \entry{rM17}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=b86aca675e2b702662cdfec9e04465df}{%
-           family={Moll},
-           familyi={M\bibinitperiod},
-           given={Ryan},
-           giveni={R\bibinitperiod}}}%
-        {{hash=63dc947fc58ae497ef795affd3c8cb6c}{%
-           family={Garaud},
-           familyi={G\bibinitperiod},
-           given={Pascale},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The American Astronomical Society}%
-      }
-      \strng{namehash}{43f1add11b8d026b8776fcbbc6d3d840}
-      \strng{fullhash}{43f1add11b8d026b8776fcbbc6d3d840}
-      \strng{fullhashraw}{43f1add11b8d026b8776fcbbc6d3d840}
-      \strng{bibnamehash}{43f1add11b8d026b8776fcbbc6d3d840}
-      \strng{authorbibnamehash}{43f1add11b8d026b8776fcbbc6d3d840}
-      \strng{authornamehash}{43f1add11b8d026b8776fcbbc6d3d840}
-      \strng{authorfullhash}{43f1add11b8d026b8776fcbbc6d3d840}
-      \strng{authorfullhashraw}{43f1add11b8d026b8776fcbbc6d3d840}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\apj}
-      \field{number}{1}
-      \field{title}{THE EFFECT OF ROTATION ON OSCILLATORY DOUBLE-DIFFUSIVE CONVECTION (SEMICONVECTION)}
-      \field{volume}{834}
-      \field{year}{2016}
-      \field{pages}{44}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.3847/1538-4357/834/1/44
       \endverb
     \endentry
     \entry{rM19}{article}{}{}
@@ -1295,31 +891,46 @@
       \verb https://doi.org/10.1002/2014EO200002
       \endverb
     \endentry
-    \entry{tR13}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=39672e7800e526d138f422c883bb6958}{%
-           family={Radko},
+    \entry{jR23}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=d258e154e89e2999ac47d07d6392d154}{%
+           family={Roberts},
            familyi={R\bibinitperiod},
-           given={Timour},
-           giveni={T\bibinitperiod}}}%
+           given={J.\bibnamedelimi H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=c82a865a7c1e36746e1abb44ff12c7d5}{%
+           family={McKinnon},
+           familyi={M\bibinitperiod},
+           given={W.\bibnamedelimi B.},
+           giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=1667e846d6716b7539520e2a44d0bb32}{%
+           family={Elder},
+           familyi={E\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{39672e7800e526d138f422c883bb6958}
-      \strng{fullhash}{39672e7800e526d138f422c883bb6958}
-      \strng{fullhashraw}{39672e7800e526d138f422c883bb6958}
-      \strng{bibnamehash}{39672e7800e526d138f422c883bb6958}
-      \strng{authorbibnamehash}{39672e7800e526d138f422c883bb6958}
-      \strng{authornamehash}{39672e7800e526d138f422c883bb6958}
-      \strng{authorfullhash}{39672e7800e526d138f422c883bb6958}
-      \strng{authorfullhashraw}{39672e7800e526d138f422c883bb6958}
+      \strng{namehash}{dcffd73e5e0388a55186cd052f82e377}
+      \strng{fullhash}{53d1ea90a4321cd0860476809761eeca}
+      \strng{fullhashraw}{53d1ea90a4321cd0860476809761eeca}
+      \strng{bibnamehash}{dcffd73e5e0388a55186cd052f82e377}
+      \strng{authorbibnamehash}{dcffd73e5e0388a55186cd052f82e377}
+      \strng{authornamehash}{dcffd73e5e0388a55186cd052f82e377}
+      \strng{authorfullhash}{53d1ea90a4321cd0860476809761eeca}
+      \strng{authorfullhashraw}{53d1ea90a4321cd0860476809761eeca}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Double-Diffusive Convection}
-      \field{year}{2013}
+      \field{journaltitle}{\ssr}
+      \field{number}{46}
+      \field{title}{Exploring the Interior of {E}uropa with the {E}uropa {C}lipper}
+      \field{volume}{219}
+      \field{year}{2023}
     \endentry
     \entry{kS19}{article}{}{}
       \name{author}{1}{}{%
@@ -1568,283 +1179,6 @@
       \verb{doi}
       \verb https://doi.org/10.1146/annurev-marine-040323-101355
       \endverb
-    \endentry
-    \entry{mT08}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=f186d744c1a8d79c1f0c63aa1ed12f14}{%
-           family={Timmermans},
-           familyi={T\bibinitperiod},
-           given={M.-L.},
-           giveni={M\bibinithyphendelim L\bibinitperiod}}}%
-        {{hash=8c0c732b9d343e524ce4fdd64c27f87c}{%
-           family={Toole},
-           familyi={T\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=a74066e0033efd396d72c17857c924db}{%
-           family={Krishfield},
-           familyi={K\bibinitperiod},
-           given={R.},
-           giveni={R\bibinitperiod}}}%
-        {{hash=d9a5cf3ecf3008d176b99f68c9a441ca}{%
-           family={Winsor},
-           familyi={W\bibinitperiod},
-           given={P.},
-           giveni={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{99ac23bcb80b3c3ac1cbc09283679b38}
-      \strng{fullhash}{82e70ffc91f521ec2b9f1892eb1695ff}
-      \strng{fullhashraw}{82e70ffc91f521ec2b9f1892eb1695ff}
-      \strng{bibnamehash}{99ac23bcb80b3c3ac1cbc09283679b38}
-      \strng{authorbibnamehash}{99ac23bcb80b3c3ac1cbc09283679b38}
-      \strng{authornamehash}{99ac23bcb80b3c3ac1cbc09283679b38}
-      \strng{authorfullhash}{82e70ffc91f521ec2b9f1892eb1695ff}
-      \strng{authorfullhashraw}{82e70ffc91f521ec2b9f1892eb1695ff}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\jgro}
-      \field{number}{C1}
-      \field{title}{Ice-Tethered Profiler observations of the double-diffusive staircase in the {C}anada Basin thermocline}
-      \field{volume}{113}
-      \field{year}{2008}
-      \verb{doi}
-      \verb https://doi.org/10.1029/2008JC004829
-      \endverb
-    \endentry
-    \entry{gT03}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=b84deb5a24042fbbf20924551a8faa72}{%
-           family={Tobie},
-           familyi={T\bibinitperiod},
-           given={Gabriel},
-           giveni={G\bibinitperiod}}}%
-        {{hash=be101ce7b1a3c6ba97ef25028eafd92a}{%
-           family={Choblet},
-           familyi={C\bibinitperiod},
-           given={Gaël},
-           giveni={G\bibinitperiod}}}%
-        {{hash=9c6ea291ab4461f7e380b692d294a58f}{%
-           family={Sotin},
-           familyi={S\bibinitperiod},
-           given={Christophe},
-           giveni={C\bibinitperiod}}}%
-      }
-      \strng{namehash}{b0d73ff9d4e320e115d51707aa5daad4}
-      \strng{fullhash}{e853d821354377b630bb72a2ababca6a}
-      \strng{fullhashraw}{e853d821354377b630bb72a2ababca6a}
-      \strng{bibnamehash}{b0d73ff9d4e320e115d51707aa5daad4}
-      \strng{authorbibnamehash}{b0d73ff9d4e320e115d51707aa5daad4}
-      \strng{authornamehash}{b0d73ff9d4e320e115d51707aa5daad4}
-      \strng{authorfullhash}{e853d821354377b630bb72a2ababca6a}
-      \strng{authorfullhashraw}{e853d821354377b630bb72a2ababca6a}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\jgrp}
-      \field{number}{E11}
-      \field{title}{Tidally heated convection: Constraints on Europa's ice shell thickness}
-      \field{volume}{108}
-      \field{year}{2003}
-      \verb{doi}
-      \verb https://doi.org/10.1029/2003JE002099
-      \endverb
-      \keyw{Europa,ice,tidal dissipation,thermal convection,equilibrium thickness}
-    \endentry
-    \entry{jT73}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=f6fcf4bc04cbb2c0403cf7c857a34f25}{%
-           family={Turner},
-           familyi={T\bibinitperiod},
-           given={J.\bibnamedelimi S.},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{f6fcf4bc04cbb2c0403cf7c857a34f25}
-      \strng{fullhash}{f6fcf4bc04cbb2c0403cf7c857a34f25}
-      \strng{fullhashraw}{f6fcf4bc04cbb2c0403cf7c857a34f25}
-      \strng{bibnamehash}{f6fcf4bc04cbb2c0403cf7c857a34f25}
-      \strng{authorbibnamehash}{f6fcf4bc04cbb2c0403cf7c857a34f25}
-      \strng{authornamehash}{f6fcf4bc04cbb2c0403cf7c857a34f25}
-      \strng{authorfullhash}{f6fcf4bc04cbb2c0403cf7c857a34f25}
-      \strng{authorfullhashraw}{f6fcf4bc04cbb2c0403cf7c857a34f25}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Buoyancy effects in fluids}
-      \field{year}{1973}
-    \endentry
-    \entry{jT02}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=2f7c968d1f00144ae4da46ea6a280592}{%
-           family={Turner},
-           familyi={T\bibinitperiod},
-           given={J.\bibnamedelimi T.},
-           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=b23da950d511af13576d2db5abfa1e80}{%
-           family={G.},
-           familyi={G\bibinitperiod},
-           given={Veronis},
-           giveni={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{7cc793244d01c848b006a7863cb73cf3}
-      \strng{fullhash}{7cc793244d01c848b006a7863cb73cf3}
-      \strng{fullhashraw}{7cc793244d01c848b006a7863cb73cf3}
-      \strng{bibnamehash}{7cc793244d01c848b006a7863cb73cf3}
-      \strng{authorbibnamehash}{7cc793244d01c848b006a7863cb73cf3}
-      \strng{authornamehash}{7cc793244d01c848b006a7863cb73cf3}
-      \strng{authorfullhash}{7cc793244d01c848b006a7863cb73cf3}
-      \strng{authorfullhashraw}{7cc793244d01c848b006a7863cb73cf3}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{JMS}
-      \field{title}{The influence of double-diffusive processes on the melting of ice in the Arctic Ocean: laboratory analogue experiments and their interpretation}
-      \field{volume}{45}
-      \field{year}{2003}
-      \field{pages}{21\bibrangedash 37}
-      \range{pages}{17}
-    \endentry
-    \entry{sV18}{article}{}{}
-      \name{author}{14}{}{%
-        {{hash=aa4478484a2f047171c34b4fbda05de3}{%
-           family={Vance},
-           familyi={V\bibinitperiod},
-           given={Steven\bibnamedelima D.},
-           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=cf66d0451c381cd7c628836cf8fdf93a}{%
-           family={Panning},
-           familyi={P\bibinitperiod},
-           given={Mark\bibnamedelima P.},
-           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=ee31169729f41e632be34d494327edaa}{%
-           family={Stähler},
-           familyi={S\bibinitperiod},
-           given={Simon},
-           giveni={S\bibinitperiod}}}%
-        {{hash=ee721ff886b9cb164b17aadca5b8b1ca}{%
-           family={Cammarano},
-           familyi={C\bibinitperiod},
-           given={Fabio},
-           giveni={F\bibinitperiod}}}%
-        {{hash=2ef992402ac31c1957cd2fbff6b3e426}{%
-           family={Bills},
-           familyi={B\bibinitperiod},
-           given={Bruce\bibnamedelima G.},
-           giveni={B\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=b84deb5a24042fbbf20924551a8faa72}{%
-           family={Tobie},
-           familyi={T\bibinitperiod},
-           given={Gabriel},
-           giveni={G\bibinitperiod}}}%
-        {{hash=bb7b8dd99fa9a09b07600e9f1cfdbcfa}{%
-           family={Kamata},
-           familyi={K\bibinitperiod},
-           given={Shunichi},
-           giveni={S\bibinitperiod}}}%
-        {{hash=6cb50e8840fe728ef9536ab8e07b331f}{%
-           family={Kedar},
-           familyi={K\bibinitperiod},
-           given={Sharon},
-           giveni={S\bibinitperiod}}}%
-        {{hash=9c6ea291ab4461f7e380b692d294a58f}{%
-           family={Sotin},
-           familyi={S\bibinitperiod},
-           given={Christophe},
-           giveni={C\bibinitperiod}}}%
-        {{hash=444f3224a1f37cb0c82883039fdea49c}{%
-           family={Pike},
-           familyi={P\bibinitperiod},
-           given={William\bibnamedelima T.},
-           giveni={W\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=bcb547044e35c9b60bcd33bf779579ef}{%
-           family={Lorenz},
-           familyi={L\bibinitperiod},
-           given={Ralph},
-           giveni={R\bibinitperiod}}}%
-        {{hash=e4cb115c0dba4ad7283483bf546f798a}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Hsin-Hua},
-           giveni={H\bibinithyphendelim H\bibinitperiod}}}%
-        {{hash=4b7470d7ffb3259b37df24d7fc5f7617}{%
-           family={Jackson},
-           familyi={J\bibinitperiod},
-           given={Jennifer\bibnamedelima M.},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=1cc245be301e84d192c2a38101f2a299}{%
-           family={Banerdt},
-           familyi={B\bibinitperiod},
-           given={Bruce},
-           giveni={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{0e6f044f367a7b75810ec918036760bd}
-      \strng{fullhash}{676b62ffa977c2e721c8599083f5cb69}
-      \strng{fullhashraw}{676b62ffa977c2e721c8599083f5cb69}
-      \strng{bibnamehash}{0e6f044f367a7b75810ec918036760bd}
-      \strng{authorbibnamehash}{0e6f044f367a7b75810ec918036760bd}
-      \strng{authornamehash}{0e6f044f367a7b75810ec918036760bd}
-      \strng{authorfullhash}{676b62ffa977c2e721c8599083f5cb69}
-      \strng{authorfullhashraw}{676b62ffa977c2e721c8599083f5cb69}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{\jgrp}
-      \field{number}{1}
-      \field{title}{Geophysical Investigations of Habitability in Ice-Covered Ocean Worlds}
-      \field{volume}{123}
-      \field{year}{2018}
-      \field{pages}{180\bibrangedash 205}
-      \range{pages}{26}
-      \verb{doi}
-      \verb https://doi.org/10.1002/2017JE005341
-      \endverb
-    \endentry
-    \entry{cZ00}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=ca517be671c5c5dfef2964e685a68163}{%
-           family={Zimmer},
-           familyi={Z\bibinitperiod},
-           given={Christophe},
-           giveni={C\bibinitperiod}}}%
-        {{hash=5887a73f437cfc20447350901026b2b5}{%
-           family={Khurana},
-           familyi={K\bibinitperiod},
-           given={Krishan\bibnamedelima K.},
-           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=ab1f283de90829b9beac2b281e174cef}{%
-           family={Kivelson},
-           familyi={K\bibinitperiod},
-           given={Margaret\bibnamedelima G.},
-           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-      }
-      \strng{namehash}{45bb708d41498fe5e81f9f0d09885df2}
-      \strng{fullhash}{497cc6e87e66902a90e947167cb72b8d}
-      \strng{fullhashraw}{497cc6e87e66902a90e947167cb72b8d}
-      \strng{bibnamehash}{45bb708d41498fe5e81f9f0d09885df2}
-      \strng{authorbibnamehash}{45bb708d41498fe5e81f9f0d09885df2}
-      \strng{authornamehash}{45bb708d41498fe5e81f9f0d09885df2}
-      \strng{authorfullhash}{497cc6e87e66902a90e947167cb72b8d}
-      \strng{authorfullhashraw}{497cc6e87e66902a90e947167cb72b8d}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0019-1035}
-      \field{journaltitle}{Icarus}
-      \field{number}{2}
-      \field{title}{Subsurface Oceans on {E}uropa and {C}allisto: Constraints from {G}alileo Magnetometer Observations}
-      \field{volume}{147}
-      \field{year}{2000}
-      \field{pages}{329\bibrangedash 347}
-      \range{pages}{19}
     \endentry
   \enddatalist
 \endrefsection
