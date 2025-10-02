@@ -32,19 +32,30 @@
  \clearfield{url}
  \clearfield{issn}
  }
+ \titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
 \begin{document}
 \pagestyle{fancy}
 \thispagestyle{fancy}
 %... then configure it.
 \fancyhf{} % clear all header fields
 \fancyhead[L]{\textcolor{red}{Tobias Oliver\\
-Summary of Previous Research}}
+Summary of Previous and Current Research}}
 \fancyfoot[R]{\thepage}
-My previous research regards rotating convection with a primary focus on the liquid core of the Earth. I have studied two major aspects of this problem. The first was an investigation of turbulent length scales in rotating convection. We used numerical simulations to determine scaling laws for eddy sizes in rapidly rotating convection. Our findings suggest that eddy sizes in the core may be much smaller than previously thought. The second project is a study of how pressure torques from the liquid core onto the mantle of the Earth can affect changes in the Earth's length of day. Scaling laws were determined from a suite of novel numerical simulations, and, by extrapolating to the parameter regime of the liquid core, we determined that pressure torques are sufficiently large to account for currently unexplained variations in the length of day. Further work in the latter project is ongoing.
-\section*{Turbulent Length Scales \cite{tO23}.}
-A turbulent fluid is characterized by chaotic fluctuations over a broad range of length scales. In turbulence studies, it is often important to determine that largest length scale over which a fluid's behavior is correlated. This quantity is often interpreted as the size of the largest eddies in the flow.
-The size of these eddies is unknown for the liquid core, however its value is important in order to better understand the geodynamo and core-mantle interactions. I performed numerical simulations of a dynamical model thought to be relevant to the Earth's liquid core, and investigated these length scales. Our findings suggest that previous work over-estimates this scale, and that the existing theory, based on force balances within the core, is incomplete. We propose a new theory which provides a new estimate for the eddy sizes and suggests that flow within the core is not inviscid, ie. despite extreme turbulence, molecular viscosity plays a significant role. This behavior is uncommon in turbulence and is specifically related to the interplay between the Coriolis effect, buoyancy, and viscosity.
-\section*{Topographic Torques \cite{tO25}, \textit{in prep}}
-The length of day on Earth is known to fluctuate. By accounting for known processes such as atmospheric interactions and the secular increase of the lunar distance, an anomalous signal can be determined which must result from interactions between the solid mantle and the liquid core. One proposed mechanism for this interaction are topographic torques, which involves the core fluid pushing on topography at the core-mantle interface and exerting a torque on the mantle, thereby changing the length of day. We performed a novel set of numerical simulations and determined that this mechanism can produce a sufficiently large torque on the mantle to account for the anomalous signal. Our study involved a novel numerical set-up in a non-spherical shell. To our knowledge, our work is the first to perform a forward simulation of rotating convection in a non-spherical shell domain. Further work is ongoing, in which we investigate more complicated topographies, including topographies motivated by seismic imaging of the core-mantle boundary.
+My research regards rotating convection with a primary focus on the liquid core of the Earth. One project I have worked on is an investigation of turbulent length scales in rotating convection. 
+%We used numerical simulations to determine scaling laws for eddy sizes in rapidly rotating convection. 
+Our findings suggest that eddy sizes in the core may be much smaller than previously thought. 
+A second project is a study of how pressure torques from the liquid core onto the mantle of the Earth can affect changes in the Earth's length of day. We determined that pressure torques are sufficiently large to account for unexplained variations in the length of day. Further work in the latter project is ongoing.
+\subsection*{Turbulent Length Scales \cite{tO23}.}
+%A turbulent fluid is characterized by chaotic fluctuations over a broad range of length scales. 
+It is important to determine that largest length scale over which a turbulent fluid's behavior is correlated. 
+%This quantity is often interpreted as the size of the largest eddies in the flow.
+This scale is unknown for the liquid core, however its value is important in order to better understand the geodynamo and core-mantle interactions. I performed numerical simulations of a dynamical model thought to be relevant to the Earth's liquid core, and investigated these length scales. Our findings suggest that previous work over-estimates this scale, and that the existing theory, based on force balances within the core, is incomplete. We propose a new theory which provides a new estimate for the eddy sizes and suggests that molecular viscosity plays a significant role in core flow. This behavior is uncommon in turbulence but is relevant to rotating planetary regimes.
+\subsection*{Topographic Torques \cite{tO25}, \textit{in prep}}
+Fluctuations in the Earth's length of day are not fully explained.
+%By accounting for known processes such as atmospheric interactions and the secular increase of the lunar distance, an anomalous signal can be determined which must result from interactions between the solid mantle and the liquid core. 
+One proposed mechanism for these variations are topographic torques, which involves the core fluid pushing on topography at the core-mantle interface and exerting a torque on the mantle, thereby changing the length of day. We performed a novel set of numerical simulations and determined that this mechanism can produce a sufficiently large torque on the mantle to account for the anomalous signal. Our study involved a novel numerical set-up in a non-spherical shell. To our knowledge, our work is the first to perform a forward simulation of rotating convection in a non-spherical shell domain. Further work is ongoing, in which we investigate more complicated topographies, including topographies motivated by seismic imaging of the core-mantle boundary.
+\subsection*{Project Preparedness}
+Rotating convection is an important topic in the study of planetary interiors, as I have shown in my research. I have focused on providing asymptotic scalings for these behaviors. This allows for extrapolation to planetary values, which is the proposed methodology for this project. I have used a variety of numerical codes, and have significant experience building, modifying, and leveraging these codes for efficient use of computing resources. I am also able to relate numerical results to theory based on first principles physics.
 \printbibliography
 \end{document}
