@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{tabularray}
+\usepackage{sidecap}
+%\usepackage{natbib,url}
+%\usepackage[backend=biber,style=numeric,maxnames =2,giveninits = true]{biblatex}
+%\addbibresource{journal_abbreviations.bib}
+%\addbibresource{References.bib}
+\usepackage[margin = 1in]{geometry}
+\usepackage{fancyhdr}
+
+
+%\sectionfont{\fontsize{14}{15}\selectfont}
+%\subsectionfont{\fontsize{12}{15}\selectfont}
+
+%\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\def\epo{\epsilon\rightarrow 0}
+\def\lb{\left(}
+\def\rb{\right)}
+\def\ls{\left[ \vphantom]}
+\def\rs{\right] }
+\def\ep{\epsilon}
+
+%\title{Direct simulation of ocean-ice coupling in icy moons}
+%\author{Tobias Oliver}
+%\date{}
+
+\begin{document}
+
+\pagestyle{fancy}
+\thispagestyle{fancy}
+%... then configure it.
+\fancyhf{} % clear all header fields
+\fancyhead[L]{\textcolor{red}{Tobias Oliver\\
+Abstract of PhD Dissertation}}
+\fancyfoot[R]{\thepage}
+\begin{center}
+	\textbf{Abstract}
+\end{center}
+The liquid core of the Earth undergoes turbulent convection, which transports heat from the solid inner core to the silicate mantle. 
+The convection drives the Earth's geodynamo, which creates the global magnetic field, and facilitates interactions between the mantle and the core, which impacts Earth's length of day. 
+Modern computers are incapable of simulating fluid systems at the extreme parameters relevant to planetary interiors, however results at moderate regimes can be extrapolated to the conditions of the liquid core.
+In this dissertation I present numerical studies of a variety of models relevant to liquid core convection. 
+I demonstrate that topography at the core-mantle boundary is capable of generating the torques necessary to explain length of day variations that are, so far, unaccounted for. These results are supported by a suite of simulations performed at the most extreme parameter range to date, in which I develop a new paradigm for understanding the fundamental force balances and length scales within the liquid core.
+\end{document}

@@ -2375,7 +2375,6 @@
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">jA23</bcf:citekey>
     <bcf:citekey order="2" intorder="1">nG15</bcf:citekey>
-    <bcf:citekey order="2" intorder="2">dJ88</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
