@@ -1,0 +1,1186 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\preamble{%
+\newcommand{\jfm}{J. Fluid Mech.~}%
+\newcommand{\pss}{Plan Space and Sci. .~}%
+\newcommand{\araa}{Ann. Rev. Astronomy and Astrophys.~}%
+\newcommand{\icarus}{Icarus }%
+\newcommand{\aap}{Astronomy and Astrophys.~}%
+\newcommand{\physscr}{Phys. Scripta }%
+\newcommand{\ssr}{Space Sci. Rev.~}%
+\newcommand{\pnas}{Proc. Nat. Acad. Sci.~}%
+\newcommand{\grl}{Geophys. Rev. Let.~}%
+\newcommand{\ncom}{Nat. Comm.~}%
+\newcommand{\nat}{Nature~}%
+\newcommand{\natp}{Nat. Phys.~}%
+\newcommand{\ngeo}{Nat. Geo.~}%
+\newcommand{\nast}{Nat. Astro.~}%
+\newcommand{\njp}{New J. Phys.~}%
+\newcommand{\prf}{Phys. Rev. Fluids~}%
+\newcommand{\prr}{Phys. Rev. Res.~}%
+\newcommand{\sadv}{Sci. Adv.~}%
+\newcommand{\jgr}{J. Geophys. Res.~}%
+\newcommand{\jgrp}{J. Geophys. Res.: Plan.~}%
+\newcommand{\jgro}{J. Geophys. Res.: Ocn.~}%
+\newcommand{\ess}{Earth and Space Sci.~}%
+\newcommand{\apj}{Astrophys. J.~}%
+\newcommand{\apjl}{Astrophys. J. Let.~}%
+\newcommand{\gafd}{Geophys. and Astrophys. Fluid Dyn.~}%
+\newcommand{\gji}{Geophys. J. Int.}%
+\newcommand{\ncee}{Comm. Earth and Env.~}%
+}
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{yA21}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=15602bcecb4e4680b6391538e7e9a96e}{%
+           family={Ashkenazy},
+           familyi={A\bibinitperiod},
+           given={Yosef},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1ca6293a1ee25965bea7097a2534c65a}{%
+           family={Tziperman},
+           familyi={T\bibinitperiod},
+           given={Eli},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{655b38978890882ce17dbf56bb25ef88}
+      \strng{fullhash}{655b38978890882ce17dbf56bb25ef88}
+      \strng{fullhashraw}{655b38978890882ce17dbf56bb25ef88}
+      \strng{bibnamehash}{655b38978890882ce17dbf56bb25ef88}
+      \strng{authorbibnamehash}{655b38978890882ce17dbf56bb25ef88}
+      \strng{authornamehash}{655b38978890882ce17dbf56bb25ef88}
+      \strng{authorfullhash}{655b38978890882ce17dbf56bb25ef88}
+      \strng{authorfullhashraw}{655b38978890882ce17dbf56bb25ef88}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\ncom}
+      \field{number}{6376}
+      \field{title}{Dynamic {E}uropa ocean shows transient {T}aylor columns and convection driven by ice melting and salinity}
+      \field{volume}{12}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1038s41467-021-26710-0
+      \endverb
+    \endentry
+    \entry{tB24}{article}{}{}
+      \name{author}{20}{}{%
+        {{hash=97de5b0d64454f82c160ee4bcd44ef7b}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Tracy\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f3edbb0c1a6ce6b8b7c921912a0222c5}{%
+           family={Zolotov},
+           familyi={Z\bibinitperiod},
+           given={Mikhail\bibnamedelima Y.},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=bd3faffa337c821d417fc73df31e2dba}{%
+           family={Gudipati},
+           familyi={G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=52c11c914f103e8c513ec5abe0a3d476}{%
+           family={Soderblom},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f1454e2081b1642a8e39e1e83ecf00ca}{%
+           family={McGrath},
+           familyi={M\bibinitperiod},
+           given={Madison},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ad8a8aa71f77a23648be5090283ee3ca}{%
+           family={Henderson},
+           familyi={H\bibinitperiod},
+           given={Bryana},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1afcfab6f1ee827dfd590f962516f240}{%
+           family={Hedman},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c8408c1c95ab4ab1fe95f591a82da292}{%
+           family={Choukroun},
+           familyi={C\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b33388b8cd95b29b571c0b39e230f6a1}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8e95754746ad474b638c1b90f4895849}{%
+           family={Chivers},
+           familyi={C\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5fbeb65d3b5709f13536189a1e7d0962}{%
+           family={Wolfenbarger},
+           familyi={W\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=cf4a8e9ab7b8b13c819773d016507b74}{%
+           family={Glein},
+           familyi={G\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=2ad859ffc2e4948e59e91a470bd956e5}{%
+           family={Castillo-Rogez},
+           familyi={C\bibinithyphendelim R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e464e891e000c2b0020f6ea14eca7913}{%
+           family={Mousis},
+           familyi={M\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=356317d43cf25eb4fe5725166cb73449}{%
+           family={Scanlan},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=344b0f9e6381059a129d077154df09db}{%
+           family={Diniega},
+           familyi={D\bibinitperiod},
+           given={Serina},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c2a640e16aeacb0a6437225a3f6904b7}{%
+           family={Seelos},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=88b4ab9108dfba70027c1870c1d82946}{%
+           family={Goode},
+           familyi={G\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=fa0d9971eba8595619988a3f506bdf44}{%
+           family={Postberg},
+           familyi={P\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8cd97a1dbe06e58c3d2c49d625c928d1}{%
+           family={Pappalardo},
+           familyi={P\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{551137ee2f21297b6eda81c7cdbc9dff}
+      \strng{fullhash}{b83882d86b52ae32ec1dbe9c024e7d46}
+      \strng{fullhashraw}{b83882d86b52ae32ec1dbe9c024e7d46}
+      \strng{bibnamehash}{551137ee2f21297b6eda81c7cdbc9dff}
+      \strng{authorbibnamehash}{551137ee2f21297b6eda81c7cdbc9dff}
+      \strng{authornamehash}{551137ee2f21297b6eda81c7cdbc9dff}
+      \strng{authorfullhash}{b83882d86b52ae32ec1dbe9c024e7d46}
+      \strng{authorfullhashraw}{b83882d86b52ae32ec1dbe9c024e7d46}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\ssr}
+      \field{month}{06}
+      \field{title}{Exploring the Composition of {E}uropa with the Upcoming {E}uropa {C}lipper Mission}
+      \field{volume}{220}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1007/s11214-024-01069-y
+      \endverb
+    \endentry
+    \entry{dA09}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=bd9bfa622328f1db9d6b1e27e73d890f}{%
+           family={Dorfman},
+           familyi={D\bibinitperiod},
+           given={Abram},
+           giveni={A\bibinitperiod}}}%
+        {{hash=85a31c69f87a71b53fbfab9bafc6e41c}{%
+           family={Renner},
+           familyi={R\bibinitperiod},
+           given={Zachary},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{75cebf55eb7d96bfbfba7aa8bd8d82d0}
+      \strng{fullhash}{75cebf55eb7d96bfbfba7aa8bd8d82d0}
+      \strng{fullhashraw}{75cebf55eb7d96bfbfba7aa8bd8d82d0}
+      \strng{bibnamehash}{75cebf55eb7d96bfbfba7aa8bd8d82d0}
+      \strng{authorbibnamehash}{75cebf55eb7d96bfbfba7aa8bd8d82d0}
+      \strng{authornamehash}{75cebf55eb7d96bfbfba7aa8bd8d82d0}
+      \strng{authorfullhash}{75cebf55eb7d96bfbfba7aa8bd8d82d0}
+      \strng{authorfullhashraw}{75cebf55eb7d96bfbfba7aa8bd8d82d0}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MPE}
+      \field{number}{1}
+      \field{title}{Conjugate Problems in Convective Heat Transfer: Review}
+      \field{volume}{2009}
+      \field{year}{2009}
+      \field{pages}{927350}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1155/2009/927350
+      \endverb
+    \endentry
+    \entry{nek5000}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=3f61fb26219e72a888dd3e4c0db570a5}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d22e2cdb922eefb8c9946b910b51230f}{%
+           family={Kerkemeier},
+           familyi={K\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et.},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Argonne National Laboratory, Illinois}%
+      }
+      \strng{namehash}{ad04eb1f2e28500bdd97a7cda9e757ec}
+      \strng{fullhash}{cb886062b40cab343beb503474f8275b}
+      \strng{fullhashraw}{cb886062b40cab343beb503474f8275b}
+      \strng{bibnamehash}{ad04eb1f2e28500bdd97a7cda9e757ec}
+      \strng{authorbibnamehash}{ad04eb1f2e28500bdd97a7cda9e757ec}
+      \strng{authornamehash}{ad04eb1f2e28500bdd97a7cda9e757ec}
+      \strng{authorfullhash}{cb886062b40cab343beb503474f8275b}
+      \strng{authorfullhashraw}{cb886062b40cab343beb503474f8275b}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nek5000 Version 19.0}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://nek5000.mcs.anl.gov
+      \endverb
+      \verb{url}
+      \verb https://nek5000.mcs.anl.gov
+      \endverb
+    \endentry
+    \entry{tG16}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=b3c1ab8b3ac5d4c5f846bf1586770ebb}{%
+           family={Gastine},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e6f6ca65df54e84ecac292831c0c2380}{%
+           family={Wicht},
+           familyi={W\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4e063f9f4a2257c7f54b900536e564ec}{%
+           family={Aubert},
+           familyi={A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{bee9e5a841bf7707f67381ada7fb0509}
+      \strng{fullhash}{20befeb2604979dc8cc31de6148f03f5}
+      \strng{fullhashraw}{20befeb2604979dc8cc31de6148f03f5}
+      \strng{bibnamehash}{bee9e5a841bf7707f67381ada7fb0509}
+      \strng{authorbibnamehash}{bee9e5a841bf7707f67381ada7fb0509}
+      \strng{authornamehash}{bee9e5a841bf7707f67381ada7fb0509}
+      \strng{authorfullhash}{20befeb2604979dc8cc31de6148f03f5}
+      \strng{authorfullhashraw}{20befeb2604979dc8cc31de6148f03f5}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Fluid Mech.}
+      \field{title}{Scaling regimes in spherical shell rotating convection}
+      \field{volume}{808}
+      \field{year}{2016}
+      \field{pages}{690\bibrangedash 732}
+      \range{pages}{43}
+    \endentry
+    \entry{cGlP19}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=00f875009c6a9c605436dd059a9af49c}{%
+           family={Gissinger},
+           familyi={G\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1de423542bfa35c4c203d76aec5e220e}{%
+           family={Petitdemange},
+           familyi={P\bibinitperiod},
+           given={Ludovic},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{aee3107914f803d5ed1e59c316a7be3c}
+      \strng{fullhash}{aee3107914f803d5ed1e59c316a7be3c}
+      \strng{fullhashraw}{aee3107914f803d5ed1e59c316a7be3c}
+      \strng{bibnamehash}{aee3107914f803d5ed1e59c316a7be3c}
+      \strng{authorbibnamehash}{aee3107914f803d5ed1e59c316a7be3c}
+      \strng{authornamehash}{aee3107914f803d5ed1e59c316a7be3c}
+      \strng{authorfullhash}{aee3107914f803d5ed1e59c316a7be3c}
+      \strng{authorfullhashraw}{aee3107914f803d5ed1e59c316a7be3c}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\nast}
+      \field{title}{A magnetically driven equatorial jet in Europa’s ocean}
+      \field{volume}{3}
+      \field{year}{2019}
+      \field{pages}{1}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41550-019-0713-3
+      \endverb
+    \endentry
+    \entry{oG13}{article}{}{}
+      \name{author}{18}{}{%
+        {{hash=b319ed1266e3a36c2eb4f20d6928cc6f}{%
+           family={Grasset},
+           familyi={G\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=1621e4ad22ea925811c4b7edeb73079e}{%
+           family={Dougherty},
+           familyi={D\bibinitperiod},
+           given={M.K.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=031eedf82072d9078cd3b1fd0f5156bc}{%
+           family={Coustenis},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f56ece40c3da7045774a0a9dfaf30990}{%
+           family={Bunce},
+           familyi={B\bibinitperiod},
+           given={E.J.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ba4ded82cad9775aaf082b67e81274bd}{%
+           family={Erd},
+           familyi={E\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0e2f3842b5550661195f2bd33030a1e0}{%
+           family={Titov},
+           familyi={T\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b97f5f70c1ff76059db1ceb0285b47ab}{%
+           family={Blanc},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5c6efba9940aeb1610dcf05ae13d5af2}{%
+           family={Coates},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a10d293a91c72c65fd115b61b7794d72}{%
+           family={Drossart},
+           familyi={D\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=236d9e71a1911671ceb39102c642d31f}{%
+           family={Fletcher},
+           familyi={F\bibinitperiod},
+           given={L.N.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ab47b74ab814187296cd686c330cda27}{%
+           family={Hussmann},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0375d51a56cdf0bb0c16ee9860a0cfd2}{%
+           family={Jaumann},
+           familyi={J\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=13021cbec100359f9fb300e16d6cdd33}{%
+           family={Krupp},
+           familyi={K\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=68af0e121416ed4472cb5cd57593e563}{%
+           family={Lebreton},
+           familyi={L\bibinitperiod},
+           given={J.-P.},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=3bba8486d054031f7e7337880946a6aa}{%
+           family={Prieto-Ballesteros},
+           familyi={P\bibinithyphendelim B\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=7513779008e64e0c1c6239876b608db0}{%
+           family={Tortora},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=10b302780e698855855b6c2b10f149b7}{%
+           family={Tosi},
+           familyi={T\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=60b0d5820652318a4abf275297c6cc12}{%
+           family={{Van Hoolst}},
+           familyi={V\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{6847292a8b6febe666ab9de585ecb6e2}
+      \strng{fullhash}{26f2936d45035003166c799a87e7893a}
+      \strng{fullhashraw}{26f2936d45035003166c799a87e7893a}
+      \strng{bibnamehash}{6847292a8b6febe666ab9de585ecb6e2}
+      \strng{authorbibnamehash}{6847292a8b6febe666ab9de585ecb6e2}
+      \strng{authornamehash}{6847292a8b6febe666ab9de585ecb6e2}
+      \strng{authorfullhash}{26f2936d45035003166c799a87e7893a}
+      \strng{authorfullhashraw}{26f2936d45035003166c799a87e7893a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0032-0633}
+      \field{journaltitle}{\pss}
+      \field{title}{{JUpiter ICy moons Explorer (JUICE): An ESA mission to orbit Ganymede and to characterise the Jupiter system}}
+      \field{volume}{78}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 21}
+      \range{pages}{21}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.pss.2012.12.002
+      \endverb
+    \endentry
+    \entry{cG19}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=412201aebff5819642a4b88d9145032d}{%
+           family={Guervilly},
+           familyi={G\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0f147885df892459c9224a2f1ea52085}{%
+           family={Cardin},
+           familyi={C\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=47752d42752ecf8e4903dde5640222a9}{%
+           family={Schaeffer},
+           familyi={S\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{b3011842ef5393c930f692c306e75f90}
+      \strng{fullhash}{f27aff35e097404788efe6e080165646}
+      \strng{fullhashraw}{f27aff35e097404788efe6e080165646}
+      \strng{bibnamehash}{b3011842ef5393c930f692c306e75f90}
+      \strng{authorbibnamehash}{b3011842ef5393c930f692c306e75f90}
+      \strng{authornamehash}{b3011842ef5393c930f692c306e75f90}
+      \strng{authorfullhash}{f27aff35e097404788efe6e080165646}
+      \strng{authorfullhashraw}{f27aff35e097404788efe6e080165646}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\nat}
+      \field{number}{7761}
+      \field{title}{Turbulent convective length scale in planetary cores}
+      \field{volume}{570}
+      \field{year}{2019}
+      \field{pages}{368\bibrangedash 371}
+      \range{pages}{4}
+    \endentry
+    \entry{wK22}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=4dd961087dbad2953ebcfba2c2a6167d}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Wanying},
+           giveni={W\bibinitperiod}}}%
+        {{hash=3e382004ac008e4ee9d191eb8f823969}{%
+           family={Mittal},
+           familyi={M\bibinitperiod},
+           given={Tushar},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8f8e487675238b8f38e162c98df48f11}{%
+           family={Bire},
+           familyi={B\bibinitperiod},
+           given={Suyash},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4a4669eb523011849860dfae15085c7d}{%
+           family={Campin},
+           familyi={C\bibinitperiod},
+           given={Jean-Michel},
+           giveni={J\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=bf2941e49d80c7173ad9909a0cbc14f5}{%
+           family={Marshall},
+           familyi={M\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{79002e4e196250675a3385007ac81334}
+      \strng{fullhash}{58a5c74795490235435e3b78b10c2bfd}
+      \strng{fullhashraw}{58a5c74795490235435e3b78b10c2bfd}
+      \strng{bibnamehash}{79002e4e196250675a3385007ac81334}
+      \strng{authorbibnamehash}{79002e4e196250675a3385007ac81334}
+      \strng{authornamehash}{79002e4e196250675a3385007ac81334}
+      \strng{authorfullhash}{58a5c74795490235435e3b78b10c2bfd}
+      \strng{authorfullhashraw}{58a5c74795490235435e3b78b10c2bfd}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\sadv}
+      \field{number}{29}
+      \field{title}{How does salinity shape ocean circulation and ice geometry on {E}nceladus and other icy satellites?}
+      \field{volume}{8}
+      \field{year}{2022}
+      \field{pages}{eabm4665}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/sciadv.abm4665
+      \endverb
+    \endentry
+    \entry{jK22}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=4ba88af0d82e9081211cd5f7219e7635}{%
+           family={Kvorka},
+           familyi={K\bibinitperiod},
+           given={Jakub},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ebb143bffab5a579d93f9beeb5edc074}{%
+           family={Čadek},
+           familyi={Č\bibinitperiod},
+           given={Ondřej},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{83f5433dc3a57b794dc635f578a8c0fb}
+      \strng{fullhash}{83f5433dc3a57b794dc635f578a8c0fb}
+      \strng{fullhashraw}{83f5433dc3a57b794dc635f578a8c0fb}
+      \strng{bibnamehash}{83f5433dc3a57b794dc635f578a8c0fb}
+      \strng{authorbibnamehash}{83f5433dc3a57b794dc635f578a8c0fb}
+      \strng{authornamehash}{83f5433dc3a57b794dc635f578a8c0fb}
+      \strng{authorfullhash}{83f5433dc3a57b794dc635f578a8c0fb}
+      \strng{authorfullhashraw}{83f5433dc3a57b794dc635f578a8c0fb}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Icarus}
+      \field{number}{114853}
+      \field{title}{A numerical model of convective heat transfer in {T}itan’s subsurface ocean}
+      \field{volume}{376}
+      \field{year}{2022}
+    \endentry
+    \entry{dL23}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=9b5096039329163daa80d3ec3dc7a6ed}{%
+           family={Lemasquerier},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=1eee582953134ae01707633919ca53e4}{%
+           family={Bierson},
+           familyi={B\bibinitperiod},
+           given={C.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0b323ba51683318ba925f0f61fb68c20}{%
+           family={Soderlund},
+           familyi={S\bibinitperiod},
+           given={K.\bibnamedelimi M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{26ef1d5a9793f5191d31678b2a8c3dc7}
+      \strng{fullhash}{b35b538d77f3ef8262c0a246cc7e6bbf}
+      \strng{fullhashraw}{b35b538d77f3ef8262c0a246cc7e6bbf}
+      \strng{bibnamehash}{26ef1d5a9793f5191d31678b2a8c3dc7}
+      \strng{authorbibnamehash}{26ef1d5a9793f5191d31678b2a8c3dc7}
+      \strng{authornamehash}{26ef1d5a9793f5191d31678b2a8c3dc7}
+      \strng{authorfullhash}{b35b538d77f3ef8262c0a246cc7e6bbf}
+      \strng{authorfullhashraw}{b35b538d77f3ef8262c0a246cc7e6bbf}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AGU: Adv.}
+      \field{number}{6}
+      \field{title}{Europa's Ocean Translates Interior Tidal Heating Patterns to the Ice-Ocean Boundary}
+      \field{volume}{4}
+      \field{year}{2023}
+      \field{pages}{e2023AV000994}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb https://doi.org/10.1029/2023AV000994
+      \endverb
+    \endentry
+    \entry{jL24}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=c060e03b334255787d913f0cc4973025}{%
+           family={Lienhard},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           suffix={V},
+           suffixi={V\bibinitperiod}}}%
+        {{hash=8da08e945cdb3b5ea4972c0bc06653fc}{%
+           family={Lienhard},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           suffix={IV},
+           suffixi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {Phlogiston Press}%
+      }
+      \strng{namehash}{6aed422889100db58514a173f891d7de}
+      \strng{fullhash}{6aed422889100db58514a173f891d7de}
+      \strng{fullhashraw}{6aed422889100db58514a173f891d7de}
+      \strng{bibnamehash}{6aed422889100db58514a173f891d7de}
+      \strng{authorbibnamehash}{6aed422889100db58514a173f891d7de}
+      \strng{authornamehash}{6aed422889100db58514a173f891d7de}
+      \strng{authorfullhash}{6aed422889100db58514a173f891d7de}
+      \strng{authorfullhashraw}{6aed422889100db58514a173f891d7de}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{6th}
+      \field{note}{Version 6.00}
+      \field{pagetotal}{810}
+      \field{title}{A Heat Transfer Textbook}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://ahtt.mit.edu
+      \endverb
+      \verb{url}
+      \verb https://ahtt.mit.edu
+      \endverb
+    \endentry
+    \entry{rM19}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=468786107bf8467f3c8e5336e768ca06}{%
+           family={Monville},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=73868543307228affedaa5a2ad1ca031}{%
+           family={Vidal},
+           familyi={V\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8046fa43ed5d81b7fa919585123930b3}{%
+           family={Cèbron},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=47752d42752ecf8e4903dde5640222a9}{%
+           family={Schaeffer},
+           familyi={S\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{53d5b46c033b1775ef3078c35d602527}
+      \strng{fullhash}{12ba9060e292019a08964d6d95816d89}
+      \strng{fullhashraw}{12ba9060e292019a08964d6d95816d89}
+      \strng{bibnamehash}{53d5b46c033b1775ef3078c35d602527}
+      \strng{authorbibnamehash}{53d5b46c033b1775ef3078c35d602527}
+      \strng{authornamehash}{53d5b46c033b1775ef3078c35d602527}
+      \strng{authorfullhash}{12ba9060e292019a08964d6d95816d89}
+      \strng{authorfullhashraw}{12ba9060e292019a08964d6d95816d89}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\gji}
+      \field{title}{Rotating double-diffusive convection in stably stratified planetary cores}
+      \field{volume}{219}
+      \field{year}{2019}
+      \field{pages}{S195\bibrangedash S218}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1093/gji/ggz347
+      \endverb
+    \endentry
+    \entry{fN16}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=a2b3ad636c23a0d3d725abb28c810899}{%
+           family={Nimmo},
+           familyi={N\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b36d69a0bf0467c791ebf766a0c0b8f0}{%
+           family={Pappalardo},
+           familyi={P\bibinitperiod},
+           given={R.\bibnamedelimi T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AGU}%
+      }
+      \strng{namehash}{ff8304724d3b73359e5f61b564075abd}
+      \strng{fullhash}{ff8304724d3b73359e5f61b564075abd}
+      \strng{fullhashraw}{ff8304724d3b73359e5f61b564075abd}
+      \strng{bibnamehash}{ff8304724d3b73359e5f61b564075abd}
+      \strng{authorbibnamehash}{ff8304724d3b73359e5f61b564075abd}
+      \strng{authornamehash}{ff8304724d3b73359e5f61b564075abd}
+      \strng{authorfullhash}{ff8304724d3b73359e5f61b564075abd}
+      \strng{authorfullhashraw}{ff8304724d3b73359e5f61b564075abd}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\jgrp}
+      \field{title}{Ocean worlds in the outer solar system}
+      \field{volume}{121}
+      \field{year}{2016}
+      \field{pages}{1378\bibrangedash 1399}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1002/2016JE005081
+      \endverb
+    \endentry
+    \entry{tO25}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=ce5f22e690d29ee35bd892b4de14913b}{%
+           family={Oliver},
+           familyi={O\bibinitperiod},
+           given={Tobias\bibnamedelima G},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=501316153c9d5cf91520a15acf6e26fa}{%
+           family={Blackman},
+           familyi={B\bibinitperiod},
+           given={Eric\bibnamedelima G},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=7c445138a1884c0fd83142b22517814c}{%
+           family={Tarduno},
+           familyi={T\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a56aa8a073539c5a853945a81ec469cc}{%
+           family={Calkins},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4c227eabfeed032325d44cdca98a118}
+      \strng{fullhash}{cc64d61d4f4bab83671d1635f42011fa}
+      \strng{fullhashraw}{cc64d61d4f4bab83671d1635f42011fa}
+      \strng{bibnamehash}{a4c227eabfeed032325d44cdca98a118}
+      \strng{authorbibnamehash}{a4c227eabfeed032325d44cdca98a118}
+      \strng{authornamehash}{a4c227eabfeed032325d44cdca98a118}
+      \strng{authorfullhash}{cc64d61d4f4bab83671d1635f42011fa}
+      \strng{authorfullhashraw}{cc64d61d4f4bab83671d1635f42011fa}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\ncee}
+      \field{title}{{Turbulence in Earth's core generates large topographic torques on the mantle}}
+      \field{volume}{6}
+      \field{year}{2025}
+      \field{pages}{484}
+      \range{pages}{1}
+    \endentry
+    \entry{rP99}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=b36d69a0bf0467c791ebf766a0c0b8f0}{%
+           family={Pappalardo},
+           familyi={P\bibinitperiod},
+           given={R.\bibnamedelimi T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=3429a6f633e045ac966bb1f7b064a256}{%
+           family={Belton},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi J.\bibnamedelimi S.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AGU}%
+      }
+      \strng{namehash}{abbc281375a2f6142b3b5634e92737c6}
+      \strng{fullhash}{e63e2ef3590bc6451d334d9fca3cd8f0}
+      \strng{fullhashraw}{e63e2ef3590bc6451d334d9fca3cd8f0}
+      \strng{bibnamehash}{abbc281375a2f6142b3b5634e92737c6}
+      \strng{authorbibnamehash}{abbc281375a2f6142b3b5634e92737c6}
+      \strng{authornamehash}{abbc281375a2f6142b3b5634e92737c6}
+      \strng{authorfullhash}{e63e2ef3590bc6451d334d9fca3cd8f0}
+      \strng{authorfullhashraw}{e63e2ef3590bc6451d334d9fca3cd8f0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\jgrp}
+      \field{title}{{Does Europa have a subsurface ocean? Evaluation of the geological evidence}}
+      \field{volume}{104}
+      \field{year}{1999}
+      \field{pages}{24015\bibrangedash 24055}
+      \range{pages}{41}
+      \verb{doi}
+      \verb 10.1029/1998JE000628
+      \endverb
+    \endentry
+    \entry{pC14_JUICE}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6dc7f961344d593c41dc2b6a9787c174}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={Cynthia\bibnamedelima B.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=3e3ec41e8be0f8fdab22b486dc8dd7c1}{%
+           family={Pappalardo},
+           familyi={P\bibinitperiod},
+           given={Robert\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf8c0f01361c3b70fd5fd7e7388e103d}
+      \strng{fullhash}{cf8c0f01361c3b70fd5fd7e7388e103d}
+      \strng{fullhashraw}{cf8c0f01361c3b70fd5fd7e7388e103d}
+      \strng{bibnamehash}{cf8c0f01361c3b70fd5fd7e7388e103d}
+      \strng{authorbibnamehash}{cf8c0f01361c3b70fd5fd7e7388e103d}
+      \strng{authornamehash}{cf8c0f01361c3b70fd5fd7e7388e103d}
+      \strng{authorfullhash}{cf8c0f01361c3b70fd5fd7e7388e103d}
+      \strng{authorfullhashraw}{cf8c0f01361c3b70fd5fd7e7388e103d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ETAGU}
+      \field{number}{20}
+      \field{title}{Europa {C}lipper Mission Concept: Exploring {J}upiter's Ocean Moon}
+      \field{volume}{95}
+      \field{year}{2014}
+      \field{pages}{165\bibrangedash 167}
+      \range{pages}{3}
+      \verb{doi}
+      \verb https://doi.org/10.1002/2014EO200002
+      \endverb
+    \endentry
+    \entry{jR23}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=d258e154e89e2999ac47d07d6392d154}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={J.\bibnamedelimi H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=c82a865a7c1e36746e1abb44ff12c7d5}{%
+           family={McKinnon},
+           familyi={M\bibinitperiod},
+           given={W.\bibnamedelimi B.},
+           giveni={W\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=1667e846d6716b7539520e2a44d0bb32}{%
+           family={Elder},
+           familyi={E\bibinitperiod},
+           given={C.\bibnamedelimi M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{dcffd73e5e0388a55186cd052f82e377}
+      \strng{fullhash}{53d1ea90a4321cd0860476809761eeca}
+      \strng{fullhashraw}{53d1ea90a4321cd0860476809761eeca}
+      \strng{bibnamehash}{dcffd73e5e0388a55186cd052f82e377}
+      \strng{authorbibnamehash}{dcffd73e5e0388a55186cd052f82e377}
+      \strng{authornamehash}{dcffd73e5e0388a55186cd052f82e377}
+      \strng{authorfullhash}{53d1ea90a4321cd0860476809761eeca}
+      \strng{authorfullhashraw}{53d1ea90a4321cd0860476809761eeca}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\ssr}
+      \field{number}{46}
+      \field{title}{Exploring the Interior of {E}uropa with the {E}uropa {C}lipper}
+      \field{volume}{219}
+      \field{year}{2023}
+    \endentry
+    \entry{kS19}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a1fea72dacc1dc64bab2d17fcf117603}{%
+           family={Soderlund},
+           familyi={S\bibinitperiod},
+           given={Krista\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1fea72dacc1dc64bab2d17fcf117603}
+      \strng{fullhash}{a1fea72dacc1dc64bab2d17fcf117603}
+      \strng{fullhashraw}{a1fea72dacc1dc64bab2d17fcf117603}
+      \strng{bibnamehash}{a1fea72dacc1dc64bab2d17fcf117603}
+      \strng{authorbibnamehash}{a1fea72dacc1dc64bab2d17fcf117603}
+      \strng{authornamehash}{a1fea72dacc1dc64bab2d17fcf117603}
+      \strng{authorfullhash}{a1fea72dacc1dc64bab2d17fcf117603}
+      \strng{authorfullhashraw}{a1fea72dacc1dc64bab2d17fcf117603}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\grl}
+      \field{number}{15}
+      \field{title}{Ocean Dynamics of Outer Solar System Satellites}
+      \field{volume}{46}
+      \field{year}{2019}
+      \field{pages}{8700\bibrangedash 8710}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1029/2018GL081880
+      \endverb
+    \endentry
+    \entry{kS20}{article}{}{}
+      \name{author}{18}{}{%
+        {{hash=a1fea72dacc1dc64bab2d17fcf117603}{%
+           family={Soderlund},
+           familyi={S\bibinitperiod},
+           given={Krista\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b0988e53d185526f1b150231bb053c59}{%
+           family={Kalousova},
+           familyi={K\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2f69fa4722d07f352cf4e7536a9a4315}{%
+           family={Buffo},
+           familyi={B\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cf4a8e9ab7b8b13c819773d016507b74}{%
+           family={Glein},
+           familyi={G\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=488daae6140db4fc6d512f4e675dadb1}{%
+           family={Goodman},
+           familyi={G\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cc26e99ec5ca0cf8e649d393bc4f494e}{%
+           family={Mitri},
+           familyi={M\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=dddd93d8c528d6b76e321f1141d7356a}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d9e9ffc6d5695f577b3baf420c6e68dc}{%
+           family={Postberg},
+           familyi={P\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d1adac3c6e01ddb36052f9266181b6e7}{%
+           family={Rovira-Navarro},
+           familyi={R\bibinithyphendelim N\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4b6ebe95e4b8b6d40951be4bbfb576b9}{%
+           family={Rückriemen},
+           familyi={R\bibinitperiod},
+           given={Tina},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ac49e08e36c413aa2b8d38243269fc15}{%
+           family={Saur},
+           familyi={S\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8ed563eb28c62b9890c932ea4434e09a}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Britney},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9c6ea291ab4461f7e380b692d294a58f}{%
+           family={Sotin},
+           familyi={S\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ee6eb92412cf014c5b2ae3a9d9428515}{%
+           family={Spohn},
+           familyi={S\bibinitperiod},
+           given={Tilman},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b84deb5a24042fbbf20924551a8faa72}{%
+           family={Tobie},
+           familyi={T\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=5c768c69c60e3307a6d2b7d187746d2a}{%
+           family={Hoolst},
+           familyi={H\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9f5555b1b45291e62c9a21e636a53618}{%
+           family={Vance},
+           familyi={V\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6309975d21e77800ec891af0163620af}{%
+           family={Vermeersen},
+           familyi={V\bibinitperiod},
+           given={Bert},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{fullhash}{983f0d25b5d6c59b992d2f0369048f36}
+      \strng{fullhashraw}{983f0d25b5d6c59b992d2f0369048f36}
+      \strng{bibnamehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{authorbibnamehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{authornamehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{authorfullhash}{983f0d25b5d6c59b992d2f0369048f36}
+      \strng{authorfullhashraw}{983f0d25b5d6c59b992d2f0369048f36}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\ssr}
+      \field{month}{06}
+      \field{title}{Ice-Ocean Exchange Processes in the {J}ovian and {S}aturnian Satellites}
+      \field{volume}{216}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1007/s11214-020-00706-6
+      \endverb
+    \endentry
+    \entry{kS14}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=a1fea72dacc1dc64bab2d17fcf117603}{%
+           family={Soderlund},
+           familyi={S\bibinitperiod},
+           given={Krista\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7a006808cde694850d64f895adb2f4a1}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Britney\bibnamedelima E.},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=15f2560648eee2322ef8d0f5bda73c38}{%
+           family={Wicht},
+           familyi={W\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b13d2d6d5d1d4fabb27c16cc0e27c1fd}{%
+           family={Blankenship},
+           familyi={B\bibinitperiod},
+           given={D.\bibnamedelimi D.},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{fullhash}{c3426b73302ccb7566be778c3a154a78}
+      \strng{fullhashraw}{c3426b73302ccb7566be778c3a154a78}
+      \strng{bibnamehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{authorbibnamehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{authornamehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{authorfullhash}{c3426b73302ccb7566be778c3a154a78}
+      \strng{authorfullhashraw}{c3426b73302ccb7566be778c3a154a78}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{\ngeo}
+      \field{month}{12}
+      \field{title}{Ocean-driven heating of Europa's icy shell at low latitudes}
+      \field{volume}{7}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1038/ngeo2021
+      \endverb
+    \endentry
+    \entry{kS24}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=a1fea72dacc1dc64bab2d17fcf117603}{%
+           family={Soderlund},
+           familyi={S\bibinitperiod},
+           given={Krista\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d1adac3c6e01ddb36052f9266181b6e7}{%
+           family={Rovira-Navarro},
+           familyi={R\bibinithyphendelim N\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=63964febd037867f9bea102c9851c035}{%
+           family={Le\bibnamedelima Bars},
+           familyi={L\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7a006808cde694850d64f895adb2f4a1}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Britney\bibnamedelima E.},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=96fdd96cbb6d960acbef91302ca81cff}{%
+           family={Gerkema},
+           familyi={G\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews}%
+      }
+      \strng{namehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{fullhash}{adcbe9b5e9f82222d91d95835f58c918}
+      \strng{fullhashraw}{adcbe9b5e9f82222d91d95835f58c918}
+      \strng{bibnamehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{authorbibnamehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{authornamehash}{e6eb685e795f8cf8b6acd84c156c1fd7}
+      \strng{authorfullhash}{adcbe9b5e9f82222d91d95835f58c918}
+      \strng{authorfullhashraw}{adcbe9b5e9f82222d91d95835f58c918}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1941-0611}
+      \field{journaltitle}{ARMS}
+      \field{number}{Volume 16, 2024}
+      \field{title}{The Physical Oceanography of Ice-Covered Moons}
+      \field{type}{Journal Article}
+      \field{volume}{16}
+      \field{year}{2024}
+      \field{pages}{25\bibrangedash 53}
+      \range{pages}{29}
+      \verb{doi}
+      \verb https://doi.org/10.1146/annurev-marine-040323-101355
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{tabularray}
+\usepackage{sidecap}
+%\usepackage{natbib,url}
+\usepackage[backend=biber,style=numeric,maxnames =2,giveninits = true]{biblatex}
+\addbibresource{../proposal/journal_abbreviations.bib}
+\addbibresource{../proposal/References.bib}
+\usepackage[margin = 1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage{titlesec}
+
+
+\sectionfont{\fontsize{14}{15}\selectfont}
+\subsectionfont{\fontsize{12}{15}\selectfont}
+%\bibliographystyle{abbrv}
+\DeclareBibliographyDriver{std}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author/editor+others/translator+others}%
+  \usebibmacro{title}%
+  \setunit{\labelnamepunct}\newblock
+  %\usebibmacro{title}%
+    %\newunit\newblock
+  \usebibmacro{journal}
+  \newunit\newblock
+  \usebibmacro{date}%
+  \newunit\newblock
+\usebibmacro{finentry}}
+
+\DeclareBibliographyDriver{stdbook}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author/editor+others/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  %\usebibmacro{title}%
+  \usebibmacro{title}
+  \newunit\newblock
+  \usebibmacro{date}%
+  \newunit\newblock
+\usebibmacro{finentry}}
+
+%\DeclareBibliographyAlias{article}{std}
+%\DeclareBibliographyAlias{book}{stdbook}
+%\DeclareBibliographyAlias{misc}{stdbook}
+\AtEveryBibitem{% Clean up the bibtex rather than editing it
+ \clearfield{isbn}
+ \clearfield{doi}
+ \clearfield{issn}
+ }
+\AtBeginBibliography{\small}
+\definecolor{gray_c}{rgb}{0.745, 0.898, 0.898}
+\definecolor{gray_h}{rgb}{0.43, 0.72, 0.72}
+
+%\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\def\epo{\epsilon\rightarrow 0}
+\def\lb{\left(}
+\def\rb{\right)}
+\def\ls{\left[ \vphantom]}
+\def\rs{\right] }
+\def\ep{\epsilon}
+
+\title{Direct simulation of ocean-ice coupling in icy moons}
+\author{Tobias Oliver}
+\date{}
+
+\begin{document}
+%\pagestyle{fancy}
+%\thispagestyle{fancy}
+%%... then configure it.
+%\fancyhf{} % clear all header fields
+%\fancyfoot[R]{\thepage}
+\newcommand{\citep}[1]{\cite{#1}}
+\section*{Education Plan}
+I think that it is important to create spaces where students can share ideas without the pressure of expectations from their advisors and other faculty.
+CU-Prime\citep{cup} is a student-run mentorship program in my home department (University of Colorado Boulder, Department of Physics) that aims to create these spaces. 
+I have worked with CU-Prime and propose to found and coordinate a similar program for undergraduate and graduate students at UC San Diego. In order to promote interdisciplinary science, I would start by including three departments: the Scripps Institution for Oceanography (SIO), the Department of Astronomy and Astrophysics (A\&A), and the Department of Physics (PHYS). 
+
+I propose two aspects of this program. First, I will facilitate mentorship partnerships between undergraduate and graduate students. Second, I will coordinate a bi-weekly talk series in which graduate students present their research to a general undergraduate audience. 
+
+\subsection*{Graduate mentorship partnerships}
+At the beginning of each academic year I will recruit second year and older graduate students to serve as volunteer mentors for small (4-6) person pods of undergraduates and first year graduate students (mentees). Pods will be scheduled to meet twice each semester to discuss classwork, getting involved in research, and advice for succeeding in their programs. 
+Pods will be formed such that each group of students will represent a variety of scientific interests from SIO, A\&A, and PHYS. 
+This partnership will provide leadership opportunities for the mentors, and will increase access to research and science networks for the mentees.
+\subsection*{Talk series}
+I will also coordinate a talk series for graduate students to present their research. The intended audience are undergraduates in physics, planetary science, and geosciences, and so a lot of effort will go into working with the speaker to make sure that their talk is accessible, jargon-free, and well explained. Speakers will also be asked to discuss how they got involved in their current research and their path to graduate school. These talks will provide a low-stress environment for both the audience and the speaker.
+The audience is provided with a window into what it actually means to be a scientific researcher, and how one might become one themselves, and the speaker is afforded a comfortable environment where they can practice presenting their research to a non-critical crowd.
+
+As a graduate student I have prepared two talks under this format, and I have found them to be very positive experiences. It was more difficult than I had thought to prepare these presentations, but I found that it helped me quite a bit when I was preparing conference talks later on. I was more confident, and I was better at communicating my findings, rather than overwhelming my audience with details. 
+
+I expect the proposed program to require 5-8 hours per week. This estimate is based off of discussions with the current administrator of CU-Prime. 
+\printbibliography
+\end{document}
+
