@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{tabularray}
+\usepackage{sidecap}
+%\usepackage{natbib,url}
+\usepackage[backend=biber,style=numeric,maxnames =5,giveninits = true]{biblatex}
+\addbibresource{../proposal/journal_abbreviations.bib}
+\addbibresource{../proposal/References.bib}
+\usepackage[margin = 1in]{geometry}
+%\bibliographystyle{abbrv}
+\DeclareBibliographyDriver{std}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author/editor+others/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  %\usebibmacro{title}%
+    %\newunit\newblock
+  \usebibmacro{journal}
+  \newunit\newblock
+  \usebibmacro{date}%
+  \newunit\newblock
+\usebibmacro{finentry}}
+
+\DeclareBibliographyDriver{stdbook}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author/editor+others/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  %\usebibmacro{title}%
+  \usebibmacro{title}
+  \newunit\newblock
+  \usebibmacro{date}%
+  \newunit\newblock
+\usebibmacro{finentry}}
+
+\DeclareBibliographyAlias{article}{std}
+\DeclareBibliographyAlias{book}{stdbook}
+\DeclareBibliographyAlias{misc}{stdbook}
+\AtBeginBibliography{\small}
+\definecolor{gray_c}{rgb}{0.745, 0.898, 0.898}
+\definecolor{gray_h}{rgb}{0.43, 0.72, 0.72}
+
+\def\epo{\epsilon\rightarrow 0}
+\def\lb{\left(}
+\def\rb{\right)}
+\def\ls{\left[ \vphantom]}
+\def\rs{\right] }
+\def\ep{\epsilon}
+
+\author{Tobias Oliver}
+\date{}
+
+\begin{document}
+\pagenumbering{gobble}
+\newcommand{\citep}[1]{\cite{#1}}
+\section*{Summary}
+Icy planets with subsurface oceans may be ubiquitous in our universe. Satellites of Jupiter and Saturn, such as Europa, Ganymede, Callisto, and Enceladus very likely contain liquid oceans, and it has been speculated that Pluto and Triton may as well. Modeling has suggested that a large portion of observed exoplanets also contain a liquid layer below an icy shell.
+These oceans link the planetary cores to the surface, and govern heat and material transport through the plant. Understanding this process is necessary for determining whether these ``ocean worlds'' are habitable for life.
+Unfortunately, most observational data is limited to surface processes, which suggests that robust models linking the ocean dynamics to the surface ice are needed.
+
+One process of interest is the effect of ice melt in the convecting ocean. 
+Heat drawn from the planetary core drives thermal convection and is expected to induce melt at the surface. Latitudinal variations in this melt provides a new mechanism for convection which has received little focus outside of the terrestrial ocean literature. 
+In the proposed work, I present a modelling procedure in which the solid ice layer is included in the simulation. 
+Heat flux through the ice is used to inform surface melt, which feeds back into the ocean convection.
+Simulations of this type have never been performed in a fully spherical geometry, which I propose here.
+
+The results of this study will allow us to better utilize future observations. We will be able to relate surface temperatures, ice thicknesses, and compositional distribution to the underlying ocean dynamics.
+%I propose to study to processes important to the interaction between the ocean and ice on the ``ocean worlds'' of the Jovian and Saturnian system. Forward, numerical simulations will be used to better constrain the dynamics of the sub-surface oceans on these planets. A focus is placed on two models that will couple ocean dynamics to the ice, so that surface observations from the upcoming \textit{Europa Clipper} and \textit{JUICE} missions can be used to predict ocean dynamics.
+%First, I will study a conjugate heat transfer model in which the surface response to underlying convection is directly simulated. No prior simulations of this type exist in the planetary literature. Second, I will investigate a double diffusive model, involving the coupled dynamics of solutal and thermal buoyancy. This process is thought to be particularly important near the ocean-ice interface where melting ice releases cold, fresh water into the underlying ocean.
+%
+\end{document}

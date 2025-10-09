@@ -12,7 +12,7 @@
 \usepackage{tabularray}
 \usepackage{sidecap}
 %\usepackage{natbib,url}
-\usepackage[backend=biber,style=numeric,maxnames =2,giveninits = true]{biblatex}
+\usepackage[backend=biber,style=numeric,maxnames =4,giveninits = true]{biblatex}
 \addbibresource{journal_abbreviations.bib}
 \addbibresource{References.bib}
 \usepackage[margin = 1in]{geometry}
@@ -78,13 +78,14 @@
 \date{}
 
 \begin{document}
-\pagestyle{fancy}
-\thispagestyle{fancy}
-%... then configure it.
-\fancyhf{} % clear all header fields
-\fancyhead[L]{\textcolor{red}{Tobias Oliver\\
-Research Proposal}}
-\fancyfoot[R]{\thepage}
+\pagenumbering{gobble}
+%\pagestyle{fancy}
+%\thispagestyle{fancy}
+%%... then configure it.
+%\fancyhf{} % clear all header fields
+%\fancyhead[L]{\textcolor{red}{Tobias Oliver\\
+%Research Proposal}}
+%\fancyfoot[R]{\thepage}
 \newcommand{\citep}[1]{\cite{#1}}
 \begin{center}
 \large{\textbf{Dynamic ocean-ice coupling on icy moons}}
@@ -94,7 +95,9 @@ I propose to study the effects of salinity on convective processes in the icy mo
 I will investigate the interplay of horizontal and bottom driven convection, and the competing effects of temperature and salinity via a novel suite of tailored numerical simulations. 
 I will focus on the interaction between the subsurface oceans and the overlaying ice in order to understand their coupled dynamics. 
 %\textbf{With upcoming data from the \textit{Europa Clipper} and \textit{JUICE} missions, the results from this study can be used to relate surface observations to ocean dynamics}.
-\textbf{The proposed work is relevant to a broad range of planetary bodies, including icy moons and exoplanets.} A specific application is to serve the \textit{Europa Clipper} and \textit{JUICE} space missions by providing insight for relating upcoming data to underlying ocean dynamics and its coupling with the ice crust.
+\textbf{The proposed work is relevant to a broad range of planetary bodies, including icy moons and exoplanets.} 
+In the context of icy moons, the results from this project can serve the \textit{Europa Clipper} and \textit{JUICE} space missions by providing insight towards relating upcoming surface data to underlying ocean dynamics.
+%A specific application is to serve the \textit{Europa Clipper} and \textit{JUICE} space missions by providing insight for relating upcoming data to underlying ocean dynamics and its coupling with the ice crust.
 
 \section{Background}
 Planetary bodies with liquid oceans are often considered to be suitable candidates for the habitability of life \citep{tB24}.
@@ -132,8 +135,8 @@ Two different mechanisms for convection will be considered.
 Horizontal convection (HC) results from density heterogeneities on the icy surface. Heavy fluid sinks and light fluid flows in to replace it, as illustrated in figure \ref{f:pic}(b). This drives a circulation within the ocean. Bottom driven convection (BDC) is due to density differences between the fluid near the silicate core and the fluid at the icy surface. Lighter fluid near the core rises while heavier surface fluid sinks, once again setting up a circulation. 
 %In plane layers, BDC is often referred to as Rayleigh-B\'enard convection. 
 It is proposed that BDC is driven by radiogenic heating from the silicate core \citep{kS14,kS19,jK22}. A snapshot of a simulation of BDC in a planetary interior from the PI's dissertation is shown in figure \ref{f:pic}(c) \citep{tO25}. 
-\textbf{In a rotating planet, heat fluxes due to BDC will vary with latitude \citep{kS14}. This indicates lateral variations in melt, which are expected to drive HC \citep{wK22}.}
-The competition and interplay between these two mechanisms in spherical geometry, including the effects of rotation and salinity, is the purpose of the proposed project.
+In a rotating planet, heat fluxes due to BDC vary with latitude, and this effect becomes more pronounced for thin fluid layers like oceans\citep{tG23}. \textbf{Lateral variations in heat flux indicates non-uniform melt, which is expected to drive HC \citep{wK22}.}
+The competition and interplay between these two mechanisms a in spherical geometry, including the effects of rotation and salinity, is the purpose of the proposed project.
 
 
 \section{Proposed project and methodology}
@@ -149,7 +152,7 @@ In the following two sections, I outline my approach to handle these difficultie
 		\includegraphics[width=0.7\textwidth]{figures/reg_diagram}
 		\phantom{Lorem ipsum dolor sit amet}
 	\end{center}
-	\caption{Regime diagram for rotating convection, adapted from \citep{dL23,tG16}. Dashed lines - extrapolations of asymptotic predictions into the DNS region. Crosses and stars - parameter space from Lemasquerier et al. 2023\citep{dL23} and Soderlund 2019\citep{kS19} respectively. Regions enclosed by dotted lines represent approximate parameter space for Europa and Ganymede \citep{dL23,kS19}. Red markers indicate proposed simulations for conjugate heat transfer (CHT) study.
+	\caption{Regime diagram for rotating convection, adapted from \citep{dL23,tG16}. Dashed lines - extrapolations of asymptotic predictions into the DNS region. Crosses and stars - parameter space from Lemasquerier et al. 2023\citep{dL23} and Soderlund 2019\citep{kS19} respectively. Regions enclosed by dotted lines represent approximate parameter space for Europa and Ganymede \citep{dL23,kS19}. Red markers indicate proposed simulations. The global model will be performed in a fully spherical geometry, whereas the local model will be a Cartesian plane layer.
 	}
 	\label{f:reg_d}
 \end{figure}
@@ -196,7 +199,8 @@ Eventually, flows become turbulent enough that rotation's role is minimal. This 
 Although significant uncertainty exists, it is believed that the icy-moons lie in the transitional and non-rotating regimes\citep{dL23,tG16}.
 
 %Forward models in this regime\citep{kS19, dL23}, have investigated only the liquid ocean and do not consider the effects of salinity. 
-The parameter space that I will explore is provided in table \ref{t:param}. Overlap with previous studies \citep{dL23,kS19} is intended, as it will allow me to compare my findings with these ``purely thermal" results. This will better elucidate the added effects of saline convection.
+The parameter space that I will explore is provided in Table \ref{t:param}. Figure \ref{f:reg_d} displays the placement of these simulations in $Ra-Ek$ space. I will explore the transitional and rotating regime, which is thought to be most relevant for the icy moons.
+Overlap with previous studies \citep{dL23,kS19} is intended, as it will allow me to compare my findings with these ``purely thermal" results. This will better elucidate the added effects of saline convection.
 %I will explore similar parameters to the regimes studied in references \citep{dL23,kS19}. This will allow me to best compare these ``purely thermal'' results to my findings, which will better elucidate the new effects of saline convection. 
 I will sweep across an order of magnitude in $\Gamma$ to establish a scaling relationship with the buoyancy ratio. 
 %A complete list of the proposed simulations is given in table \ref{t:param}. 
@@ -206,22 +210,37 @@ Horizontal convection is driven by salinity variations at the outer boundary of 
 Convective studies that do not consider salinity have generally only investigated the ocean \citep{kS19,dL23} and not the ice. The general approach is to fix the temperature of the bounding surface (ice shell), however this implies uniform melt.
 \textbf{I propose to use a simulation configuration in which the ice is included in the solution domain so that heat is able to conduct from the ocean into the ice.} 
 A boundary condition for temperature is placed on the moon surface, and the temperature of the ocean-ice interface is allowed to vary. The interfacial temperature can be used to determine the salinity at the ocean surface \citep{wK22}.
+Figure \ref{f:plan}(a) shows a sketch of (half) the simulation configuration. A full sphere will be used.
 \textbf{This approach has never been used in a full spherical geometry.}\\
 
-I will supplement these global simulations with a suite of ``local" simulations in a cartesian plane layer. By reducing the effective volume of the domain, Local models allow for more extreme values of $Ra$ and $Ek$, which helps to validate scaling laws based on the global results. Although local models miss some physics captured by global models, they share many fundamental processes and allow for the investigation of more turbulent flows.
+I will supplement these global simulations with a suite of ``local" simulations in a Cartesian geometry. By reducing the effective volume of the domain, local models allow for more extreme values of $Ra$ and $Ek$, which helps to validate scaling laws based on the global results. Although local models miss some physics captured by global models, they share many fundamental processes and allow for the investigation of more turbulent flows.
 
-
+Figure \ref{f:plan}(b) illustrates the computational setup for the planar model. The surface ice temperature will linearly vary from $-\delta T$ to $\delta T$ to emulate the latitudinal variation in heat flux in the global model. If $\delta T$ is too large, then thermal HC will dominate over thermal BDC. I will fix $\delta T/\Delta T = 10^{-3},$ which for $Nu<10$ (relevant for these simulations) will keep the flow in the thermal BDC dominated regime\citep{cN22}.
+\begin{figure}
+	\begin{center}
+		\subfloat[][]{\includegraphics[width=0.35\textwidth]{figures/cht}}
+	\subfloat[][]{\includegraphics[width=0.35\textwidth]{figures/cht_plane}}
+	\end{center}
+	\caption{Simulation domain for the global (a) and local (b) models. Only one hemisphere is shown for the fully spherical global model. $\Omega$ and $g$ are the rotation and gravitational vectors respectively. Fixed temperature boundary conditions are placed on the silicate core (red) and the surface of the ice.}
+	\label{f:plan}
+\end{figure}
 \begin{table}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
-Model&$Ra$&$Ek$&$D_{i}/D$& $\Gamma$ &\# Simulations & cpu$\times$hour\\
+Model&$Ra$&$Ek$&$D_{i}/D$& $\Gamma$ &\# Simulations & cpu$\cdot$hour\\
 		\hline
 G&$\lb 5 \times 10^{6} - 2 \times 10^{8} \rb $ & $3 \times 10^{-4} $ & $0.5,0.1$&0.5,0.05&20&$1.7 \times 10^{6}$\\
   	\hline
 G&$\lb 5 \times 10^{6} - 1 \times 10^{9} \rb $ & $1 \times 10^{-4} $ & $0.5,0.1$&0.5,0.05&20&$1.7\times 10^{6}$\\
   	\hline
 G&$\lb 5\times 10^{7}, 2 \times 10^{9} \rb $ & $3 \times 10^{-5} $ & $0.5,0.1$&0.5,0.05&8&$2.5\times 10^6$\\
+		\hline
+L&$\lb 5 \times 10^{7} - 2 \times 10^{9} \rb $ & $3 \times 10^{-5} $ & $0.5,0.1$&0.5,0.05&20&$1.3 \times 10^{6}$\\
+  	\hline
+L&$\lb 5 \times 10^{8} - 5 \times 10^{10} \rb $ & $1 \times 10^{-5} $ & $0.5,0.1$&0.5,0.05&20&$2.0\times 10^{6}$\\
+  	\hline
+L&$\lb 5\times 10^{9}, 5 \times 10^{11} \rb $ & $3 \times 10^{-6} $ & $0.5,0.1$&0.5,0.05&8&$1.5\times 10^6$\\
 		\hline
 %Shell & $10^5$& $\infty$&$10^4-10^5$& 5& $2\times 10^{6}$\\
 %		\hline
@@ -233,17 +252,17 @@ G&$\lb 5\times 10^{7}, 2 \times 10^{9} \rb $ & $3 \times 10^{-5} $ & $0.5,0.1$&0
 %		\hline
 %Plane &$10^{7}-5\times 10^{7}$ & $3\times10^{-5}$&$12.5Ra$ & 5& $10^{6}$ \\
 		\hline
-Totals & && & &48&$4.9 \times 10^6$ \\
+Totals & && & &96&$1.1 \times 10^7$ \\
 		\hline
 \end{tabular}
 \end{center}
-\caption{Proposed parameter space. G refers to a global model in a full spherical shell. L refers to a local model in a cartesian plane. The third column presents the ratio of ice to ocean thickness, which can be modified to change $Bi$. Computing costs are estimate values based off of existing studies \citep{dL23,rM19} and personal experience with relevant codes.}
+\caption{Proposed parameter space. G refers to a global model in a full spherical shell. L refers to a local model in a Cartesian plane. The fourth column presents the ratio of ice to ocean thickness, which can be modified to change $Bi$. Computing costs are estimate values based off of existing studies \citep{dL23,rM19} and personal experience with relevant codes.}
 \label{t:param}
 \end{table}
 
 
 \subsection{Proposed simulations and computing requirements}
-I propose a suite of 48 simulations to investigate ice-ocean coupling in the icy moons. The specific parameter values are given in table \ref{t:param}, as well as the estimated computing cost.  The existing hydrodynamics code \texttt{Nek5000} \citep{nek5000} will be used to perform the simulations, and can be configured to handle thermal-saline convection as well as the solid icy exterior.
+I propose a suite of 96 simulations to investigate ice-ocean coupling in the icy moons. The specific parameter values are given in table \ref{t:param}, as well as the estimated computing cost, which is $1.1\times 10^{7}$ cpu$\cdot$hours.  The existing hydrodynamics code \texttt{Nek5000} \citep{nek5000} will be used to perform the simulations, and can be configured to handle thermal-saline convection as well as the solid icy exterior.
 In previous work \citep{tO25}, I have used \texttt{Nek5000} to investigate core mantle interactions in the Earth's liquid core and have extensive experience with running and modifying the code. Table \ref{t:param} provides estimate computing times based on previous rotating convection studies in icy moons \citep{dL23} and my experience with \texttt{Nek5000}.
  I will apply for computing time through ACCESS and the Texas Advanced Computing Center, which both provide access to high performance computing resources and have supported me in the past. The proposed host institution, UC San Diego, can also provide computing time.
  \subsection{Timeline}
@@ -267,7 +286,7 @@ A deeper understanding of the interaction between the convection and icy surface
 
 The proposed study will investigate the thermal response of the icy shell to the underlying convection, and the ocean's response to the melting and freezing shell. 
 %\textbf{When data from EC and \textit{JUICE} becomes available, these results will provide insight into the interior of the Jovian ocean worlds.}
-\textbf{These results will provide insight into the interior of the Jovian ocean worlds, which will be crucial to interpret the upcoming data from EC and \textit{JUICE}.}
+\textbf{These results will provide insight into the interior of the Jovian ocean worlds, which will be crucial to interpret surface observations of the icy moons.}
 %\subsection{Beyond the Jovian system}
 
 This project applies to other planetary bodies as well. The Saturnian moon Enceladus likely contains a sub-surface ocean and has a similar geometry to Europa \citep{kS24}. There is significant uncertainty whether Triton \citep{jK22} and Pluto \citep{kS24} are ocean worlds and the results of this study will be useful to further constrain the properties of these bodies. 
@@ -282,7 +301,7 @@ Lastly, the studied convective processes have implications for induced magnetic 
 \section{Proposed institution- UC San Diego}
 %Dr. Young and Dr. Siegelman are faculty at Scripps Institution for Oceanography (SIO) at UC San Diego. 
 I propose to work with Dr. Lia Siegelman and Dr. William Young, who are physical oceanographers at Scripps Institution for Oceanography (SIO) at UC San Diego. 
-They have recently investigated astrophysical fluid mechanics in the context of Jovian polar dynamics and the formation of the polar vortex crystals\cite{lS22,lS22b,lS24}, and are interested in icy moon ocean dynamics and the proposed project involved input from both.
+They have recently investigated astrophysical fluid mechanics in the context of Jovian polar dynamics and the formation of polar vortex crystals\cite{lS22,lS22b,lS24}, and are interested in icy moon ocean dynamics and the proposed project involved input from both.
 
 \subsection{An interdisciplinary approach to extraterrestrial oceans}
 My research has been primarily focused on geophysical turbulence in the context of the Earth's liquid core. Although the fluid dynamics of the liquid core and terrestrial oceans share many similarities, fundamental differences exist in both the physical problem and the scientific approaches. Terrestrial oceans are, relative to their lateral extent, very thin layers, whereas the liquid core is relatively thick. This leads to significantly different mathematical and numerical approaches when attempting to solve the dynamics.
@@ -302,10 +321,8 @@ A primary goal of the proposed project is to relate theoretical predictions of o
 This fellowship would broaden my scientific expertise. Through graduate school,
 the focus of my research has been convection in planetary interiors similar to the Earth's core, but I would like to increase my research perspectives to include other planetary bodies and terrestrial oceans. Most of my research has been purely numerical, with highly idealized models that are poorly constrained by data. This is due largely to the lack of observational results for planetary interiors. In contrast, the oceanography community often works with parameterized models such as the \texttt{MITgcm}\citep{jM97} that can, in principle, reach much more extreme parameter regimes. The icy moons are a crossroads between planetary convection and oceanography and present an exciting natural laboratory for studying rotating convection where new data is upcoming. I would personally benefit from this fellowship because it would expose me to the oceanographic approach to convection problems, and would improve my outlooks when applying for research positions in the planetary sciences. More broadly, I think that the planetary interiors community and the oceanography community would benefit from more collaboration. 
 
-
-\subsection{Public outreach at SIO}
-The SCOPE program at SIO coordinates outreach opportunities between San Diego students and researchers. 
-I want to participate in this program by performing rotating tank demonstrations, which are fun, simple experiments that engage students in planetary science.
+\subsection{Code development and availability}
+The software developed to perform and analyze the simulations from this study will be made publicly available with suitable documentation. This will enable future coupled studies of bottom driven convection and horizontal convection.
 %
 \section{Education Plan}
 I think that it is important to create spaces where students can share ideas without the pressure of expectations from their advisors and other faculty.
@@ -331,7 +348,7 @@ A major goal of this proposal is to determine the relationship between ocean con
 \begin{spacing}{0.4}
 %\begin{multicols}{2}
 %\bibliography{References,journal_abbreviations}%jfm-bib,References}
-
+\newpage
 \printbibliography
 
 %\end{multicols}
